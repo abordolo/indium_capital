@@ -4,7 +4,9 @@
     <!-- navigation item without sub menu -->
     <div v-if="!('subMenu' in navigationItem)">
       <InertiaLink :href="navigationItem.url">
-        <div class="font-medium">{{ navigationItem.name }}</div>
+        <div class="font-semibold hover:text-primary-500">
+          {{ navigationItem.name }}
+        </div>
       </InertiaLink>
     </div>
     <!-- navigation item without sub menu -->
@@ -15,7 +17,9 @@
       @mouseenter="showSubMenu = true"
       @mouseleave="showSubMenu = false"
     >
-      <div class="font-medium cursor-pointer">{{ navigationItem.name }}</div>
+      <div class="font-semibold cursor-pointer hover:text-primary-500">
+        {{ navigationItem.name }}
+      </div>
 
       <!-- sub menu -->
       <Transition
@@ -34,7 +38,7 @@
               <!-- single sub menu item -->
               <InertiaLink :href="subMenuItem.url">
                 <div
-                  class="group font-medium px-6 py-2 hover:bg-primary-600 transition-all duration-300 flex items-center justify-between"
+                  class="group font-semibold px-6 py-2 hover:bg-primary-600 transition-all duration-300 flex items-center justify-between"
                 >
                   <!-- menu item name -->
                   <span
