@@ -32,7 +32,6 @@ createInertiaApp({
       createApp({ render: () => h(App, props) })
         .use(plugin)
         .use(ZiggyVue)
-        .mount(el)
         .use(VueSmoothScroll)
 
         // inertia
@@ -42,6 +41,8 @@ createInertiaApp({
         // layout
         .component('Section', Section)
         .component('Container', Container)
+
+        .mount(el)
     );
   },
   progress: {
