@@ -1,13 +1,5 @@
 <template>
-  <!-- contents wrapper -->
-  <div>
+  <div class="overflow-x-hidden">
     <slot />
   </div>
-  <!-- contents wrapper -->
 </template>
-
-<script setup>
-// imports
-
-// props
-</script>
