@@ -5,6 +5,7 @@ import { createApp, h } from 'vue';
 import { createInertiaApp, Head, Link } from '@inertiajs/vue3';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy';
 import VueSmoothScroll from 'vue3-smooth-scroll';
+import 'animate.css';
 
 // layout
 import AppLayout from '@/Components/Custom/Base/Layouts/AppLayout/Index.vue';

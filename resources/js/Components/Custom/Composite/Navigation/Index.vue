@@ -6,7 +6,7 @@
         <Logo />
 
         <!-- desktop navigation -->
-        <DesktopNavigation />
+        <DesktopNavigation :navigationItems="navigationItems" />
         <!-- desktop navigation -->
       </div>
       <!-- navigation bar -->
@@ -16,7 +16,81 @@
 
 <script setup>
 // imports
+import { ref } from 'vue';
 import DesktopNavigation from './Partials/DesktopNavigation.vue';
 
-// props
+// navigation link
+const navigationItems = ref([
+  {
+    id: 1,
+    name: 'Home',
+    url: route('home'),
+  },
+
+  {
+    id: 2,
+    name: 'About Us',
+    subMenu: [
+      {
+        id: 21,
+        name: 'Services',
+        url: '#about',
+      },
+
+      {
+        id: 22,
+        name: 'Team',
+        url: '#team',
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    name: 'Why Us',
+    subMenu: [
+      {
+        id: 31,
+        name: 'Why Indium',
+        url: 'why-us',
+      },
+
+      {
+        id: 32,
+        name: 'Our Values',
+        url: 'our-values',
+      },
+    ],
+  },
+
+  {
+    id: 4,
+    name: 'Expertise',
+    subMenu: [
+      {
+        id: 41,
+        name: 'Transactions',
+        url: '#',
+      },
+
+      {
+        id: 42,
+        name: 'Insights',
+        url: '#',
+      },
+
+      {
+        id: 43,
+        name: 'Testimonials',
+        url: '#',
+      },
+    ],
+  },
+
+  {
+    id: 5,
+    name: 'Contact',
+    url: '/contact-us',
+  },
+]);
 </script>
