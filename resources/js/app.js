@@ -11,6 +11,9 @@ import AppLayout from '@/Components/Custom/Base/Layouts/AppLayout/Index.vue';
 import Section from '@/Components/Custom/Base/Layouts/Section/Index.vue';
 import Container from '@/Components/Custom/Base/Layouts/Container/Index.vue';
 
+// logo
+import Logo from '@/Components/Custom/Base/Logo/Index.vue';
+
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
 createInertiaApp({
@@ -41,6 +44,9 @@ createInertiaApp({
         // layout
         .component('Section', Section)
         .component('Container', Container)
+
+        // logo
+        .component('Logo', Logo)
 
         .mount(el)
     );
