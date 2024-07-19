@@ -3,7 +3,7 @@
     <!-- navigation and content -->
     <div class="flex-1">
       <Navigation />
-      <Navigation2 />
+      <Navigation2 v-if="false" />
 
       <slot />
     </div>

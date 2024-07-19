@@ -15,6 +15,19 @@ import Container from '@/Components/Custom/Base/Layouts/Container/Index.vue';
 // logo
 import Logo from '@/Components/Custom/Base/Logo/Index.vue';
 
+// texts
+import PreHeading from '@/Components/Custom/Base/PreHeading/Index.vue';
+import Heading from '@/Components/Custom/Base/Heading/Index.vue';
+import Intro from '@/Components/Custom/Base/Intro/Index.vue';
+import BodyText from '@/Components/Custom/Base/BodyText/Index.vue';
+import TextBlock from '@/Components/Custom/Base/TextBlock/Index.vue';
+
+// button
+import AppButton from '@/Components/Custom/Base/AppButton/Index.vue';
+
+// animate on scroll
+import AnimateOnScroll from '@/Components/Custom/Base/AnimateOnScroll/Index.vue';
+
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
 createInertiaApp({
@@ -49,6 +62,20 @@ createInertiaApp({
         // logo
         .component('Logo', Logo)
 
+        // texts
+        .component('PreHeading', PreHeading)
+        .component('Heading', Heading)
+        .component('Intro', Intro)
+        .component('BodyText', BodyText)
+        .component('TextBlock', TextBlock)
+
+        // button
+        .component('AppButton', AppButton)
+
+        // animate on scroll
+        .component('AnimateOnScroll', AnimateOnScroll)
+
+        // mount
         .mount(el)
     );
   },
