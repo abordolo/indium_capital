@@ -7,9 +7,9 @@ import { ZiggyVue } from '../../vendor/tightenco/ziggy';
 import VueSmoothScroll from 'vue3-smooth-scroll';
 
 // layout
-import AppLayout from '@/Components/Custom/Base/Layouts/AppLayout.vue';
-import Section from '@/Components/Custom/Base/Layouts/Section.vue';
-import Container from '@/Components/Custom/Base/Layouts/Container.vue';
+import AppLayout from '@/Components/Custom/Base/Layouts/AppLayout/Index.vue';
+import Section from '@/Components/Custom/Base/Layouts/Section/Index.vue';
+import Container from '@/Components/Custom/Base/Layouts/Container/Index.vue';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
