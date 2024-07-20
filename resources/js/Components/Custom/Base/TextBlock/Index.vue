@@ -46,9 +46,12 @@
         <!-- preHeading heading intro -->
 
         <!-- bodyText -->
-        <AnimateOnScroll :delay="300">
-          <BodyText v-if="body">{{ body }}</BodyText>
-        </AnimateOnScroll>
+
+        <BodyText v-if="body">
+          <AnimateOnScroll :delay="300">
+            {{ body }}
+          </AnimateOnScroll>
+        </BodyText>
         <!-- bodyText -->
       </div>
       <!-- preHeading heading intro bodyText -->
