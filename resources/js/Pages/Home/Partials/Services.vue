@@ -23,7 +23,7 @@
               :key="item.id"
             >
               <!-- single service -->
-              <div class="bg-white/90 p-6 rounded-lg pb-20 relative">
+              <div class="bg-white/90 p-6 rounded-xl border shadow-lg pb-20 relative">
                 <!-- icon -->
                 <AnimateOnScroll>
                   <div class="relative">
