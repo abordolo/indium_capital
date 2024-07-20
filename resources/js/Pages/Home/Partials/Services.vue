@@ -13,8 +13,14 @@
 
         <!-- bottom -->
         <div
-          class="bg-[url('images/home/services/services-bg.png')] px-8 rounded-2xl p-8 min-h-[540px] bg-center bg-cover relative"
+          class="px-8 rounded-3xl p-8 min-h-[540px] relative shadow-xl"
         >
+        <!-- background -->
+         <div class="absolute inset-0 -z-10">
+          <img src="images/home/services/services-bg.png" class=" object-cover object-center h-full w-full rounded-3xl">
+         </div>
+        <!-- background -->
+
           <!-- services blocks -->
           <div class="absolute bottom-8 grid grid-cols-2 right-8 left-8 gap-8">
             <!-- services in loop -->
@@ -23,7 +29,7 @@
               :key="item.id"
             >
               <!-- single service -->
-              <div class="bg-white/90 p-6 rounded-xl border shadow-lg pb-20 relative">
+              <div class="bg-white/90 p-6 rounded-2xl border shadow-lg pb-20 relative">
                 <!-- icon -->
                 <AnimateOnScroll>
                   <div class="relative">

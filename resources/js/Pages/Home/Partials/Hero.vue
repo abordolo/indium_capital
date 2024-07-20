@@ -1,5 +1,13 @@
 <template>
-  <Section class="bg-[url('images/home/hero/bg.png')] bg-cover bg-center py-32">
+  <Section class="py-32 relative">
+    <!-- background -->
+    <div class="absolute inset-0 -z-10">
+      <img
+        src="images/home/hero/bg.png"
+        class="object-cover object-center w-full h-full"
+      />
+    </div>
+    <!-- background -->
     <Container>
       <!-- contents -->
       <div class="flex items-center justify-between gap-8">
