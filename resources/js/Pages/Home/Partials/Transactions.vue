@@ -1,7 +1,14 @@
 <template>
-  <Section
-    class="py-[120px] bg-[url('images/home/transactions/transactions-bg.png')] bg-cover bg-center"
-  >
+  <Section class="py-[120px] relative">
+    <!-- background image -->
+    <div class="absolute inset-0 -z-10">
+      <img
+        src="images/home/transactions/transactions-bg.png"
+        class="object-cover object-center h-full w-full"
+      />
+    </div>
+    <!-- background image -->
+
     <Container>
       <!-- contents -->
       <div>
