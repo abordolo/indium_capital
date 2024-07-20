@@ -1,17 +1,13 @@
 <template>
-  <!-- <Section
-    class="py-[120px] bg-gradient-to-b from-primary-50 to-white"
-    id="why-indium"
-  > -->
   <Section
     class="py-[120px] relative"
-    id="values"
+    id="our-values"
   >
     <!-- background image -->
     <div class="absolute inset-0 -z-10">
       <img
         src="images/home/values/bg.png"
-        class="object-cover object-center h-full w-full"
+        class="object-cover object-center h-full w-full opacity-50"
       />
     </div>
     <!-- background image -->
