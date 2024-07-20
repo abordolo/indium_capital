@@ -26,7 +26,7 @@
           >
             <!-- single card -->
             <div
-              class="bg-primary-500 p-6 border rounded-xl border-primary-500 relative pb-[220px] text-center text-white shadow-lg"
+              class="bg-primary-500 p-6 border rounded-xl border-white relative pb-[220px] text-center text-white hover:shadow-2xl transition-all duration-500 hover:border-primary-500 shadow-inner"
             >
               <!-- primary logo -->
 
@@ -151,13 +151,13 @@
 const preHeading = 'Transactions';
 const heading = 'Lorem Ipsum Heading for Transactions';
 const intro =
-  'Lorem ipsum introduction text for services. Lorem ipsum introduction text for services. Lorem ipsum introduction text for services. ';
+  'Lorem ipsum introduction text for services. Lorem ipsum introduction text for services. Lorem ipsum introduction text for services.';
 const cards = [
   // marengo
   {
     primaryLogo: 'images/home/transactions/logos/marengo.png',
     dealValue: '~$30mn',
-    text: 'Acquisition of 250 bed hospital in Gurgaon xxx',
+    text: 'Acquisition of 250 bed hospital in Gurgaon',
     secondaryLogo1: 'images/home/transactions/logos/pratiksha.png',
     intermediateText: null,
     secondaryLogo2: null,
