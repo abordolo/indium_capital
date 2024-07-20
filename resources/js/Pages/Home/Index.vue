@@ -13,6 +13,7 @@
     <Transactions />
     <Team />
     <WhyIndium />
+    <Values />
     <!-- contents -->
   </div>
   <!-- page wrapper -->
@@ -25,6 +26,7 @@ import Services from './Partials/Services.vue';
 import Transactions from './Partials/Transactions.vue';
 import Team from './Partials/Team.vue';
 import WhyIndium from './Partials/WhyIndium.vue';
+import Values from './Partials/Values.vue';
 
 // props
 </script>
