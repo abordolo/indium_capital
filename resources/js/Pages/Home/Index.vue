@@ -9,6 +9,7 @@
 
     <!-- contents -->
     <Hero />
+    <Services />
     <!-- contents -->
   </div>
   <!-- page wrapper -->
@@ -17,6 +18,7 @@
 <script setup>
 // imports
 import Hero from './Partials/Hero.vue';
+import Services from './Partials/Services.vue';
 
 // props
 </script>
