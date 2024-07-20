@@ -12,6 +12,7 @@
     <Services />
     <Transactions />
     <Team />
+    <WhyIndium />
     <!-- contents -->
   </div>
   <!-- page wrapper -->
@@ -23,6 +24,7 @@ import Hero from './Partials/Hero.vue';
 import Services from './Partials/Services.vue';
 import Transactions from './Partials/Transactions.vue';
 import Team from './Partials/Team.vue';
+import WhyIndium from './Partials/WhyIndium.vue';
 
 // props
 </script>

@@ -1,6 +1,6 @@
 <template>
   <!-- contents wrapper -->
-  <div class="flex items-center space-x-8">
+  <div class="flex items-center space-x-12">
     <!-- navigation items loop -->
     <template
       v-for="item in navigationItems"

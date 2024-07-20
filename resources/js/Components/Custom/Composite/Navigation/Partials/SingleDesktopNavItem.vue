@@ -38,7 +38,10 @@
               :key="subMenuItem.id"
             >
               <!-- single sub menu item -->
-              <InertiaLink :href="subMenuItem.url">
+              <InertiaLink
+                :href="subMenuItem.url"
+                v-smooth-scroll
+              >
                 <div
                   class="group font-semibold px-6 py-2 hover:bg-primary-600 transition-all duration-300 flex items-center justify-between"
                 >

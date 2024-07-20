@@ -34,7 +34,7 @@ const navigationItems = ref([
       {
         id: 21,
         name: 'Services',
-        url: '#about',
+        url: '#services',
       },
 
       {
@@ -52,13 +52,13 @@ const navigationItems = ref([
       {
         id: 31,
         name: 'Why Indium',
-        url: 'why-us',
+        url: '#why-indium',
       },
 
       {
         id: 32,
         name: 'Our Values',
-        url: 'our-values',
+        url: '#our-values',
       },
     ],
   },
@@ -70,19 +70,19 @@ const navigationItems = ref([
       {
         id: 41,
         name: 'Transactions',
-        url: '#',
+        url: '#transactions',
       },
 
       {
         id: 42,
         name: 'Insights',
-        url: '#',
+        url: '#insights',
       },
 
       {
         id: 43,
         name: 'Testimonials',
-        url: '#',
+        url: '#testimonials',
       },
     ],
   },

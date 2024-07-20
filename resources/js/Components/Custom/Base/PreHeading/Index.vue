@@ -1,6 +1,6 @@
 <template>
   <p
-    class="font-medium tracking-wider uppercase"
+    class="font-semibold tracking-wider uppercase"
     :class="{
       'text-primary-500': !textWhite,
       'text-white': textWhite,
