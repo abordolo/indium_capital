@@ -22,9 +22,6 @@ import Intro from '@/Components/Custom/Base/Intro/Index.vue';
 import BodyText from '@/Components/Custom/Base/BodyText/Index.vue';
 import TextBlock from '@/Components/Custom/Base/TextBlock/Index.vue';
 
-// button
-import AppButton from '@/Components/Custom/Base/AppButton/Index.vue';
-
 // animate on scroll
 import AnimateOnScroll from '@/Components/Custom/Base/AnimateOnScroll/Index.vue';
 
@@ -68,9 +65,6 @@ createInertiaApp({
         .component('Intro', Intro)
         .component('BodyText', BodyText)
         .component('TextBlock', TextBlock)
-
-        // button
-        .component('AppButton', AppButton)
 
         // animate on scroll
         .component('AnimateOnScroll', AnimateOnScroll)

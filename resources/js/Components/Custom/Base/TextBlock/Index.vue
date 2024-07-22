@@ -6,13 +6,13 @@
     }"
   >
     <!-- preHeading heading intro bodyText button -->
-    <div class="space-y-8">
+    <div class="space-y-10">
       <!-- preHeading heading intro bodyText -->
-      <div class="space-y-6">
+      <div class="space-y-8">
         <!-- preHeading heading intro -->
-        <div class="space-y-4">
+        <div class="space-y-6">
           <!-- preHeading and heading -->
-          <div class="space-y-2">
+          <div class="space-y-4">
             <!-- preHeading -->
             <AnimateOnScroll>
               <PreHeading
@@ -55,50 +55,6 @@
         <!-- bodyText -->
       </div>
       <!-- preHeading heading intro bodyText -->
-
-      <!-- button -->
-      <div
-        class="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
-        v-if="primaryButtonText || secondaryButtonText"
-        :class="{
-          'justify-center': alignment === 'center',
-        }"
-      >
-        <!-- primary button -->
-        <AnimateOnScroll
-          v-if="primaryButtonText"
-          :delay="350"
-        >
-          <AppButton
-            color="primary"
-            :size="buttonSize"
-            :url="primaryButtonUrl"
-            :noShadow="noShadow"
-            class="min-w-[180px]"
-          >
-            {{ primaryButtonText }}
-          </AppButton>
-        </AnimateOnScroll>
-        <!-- primary button -->
-
-        <!-- secondary button -->
-        <AnimateOnScroll
-          v-if="secondaryButtonText"
-          :delay="400"
-        >
-          <AppButton
-            color="secondary"
-            :size="buttonSize"
-            :url="secondaryButtonUrl"
-            :noShadow="noShadow"
-            class="min-w-[180px]"
-          >
-            {{ secondaryButtonText }}
-          </AppButton>
-        </AnimateOnScroll>
-        <!-- secondary button -->
-      </div>
-      <!-- button -->
     </div>
     <!-- preHeading heading intro bodyText button -->
   </div>
@@ -127,25 +83,10 @@ const props = defineProps({
     validator: (value) => ['h1', 'h2', 'display'].includes(value),
   },
 
-  //   buttons
-  primaryButtonText: String,
-  primaryButtonUrl: String,
-  secondaryButtonText: String,
-  secondaryButtonUrl: String,
-
   // textWhite
   textWhite: { type: Boolean, default: false },
 
   // noShadow
   noShadow: { type: Boolean, default: false },
-});
-
-// button size
-const buttonSize = computed(() => {
-  if (props.headingSize === 'display') {
-    return 'cta';
-  }
-
-  return 'normal';
 });
 </script>

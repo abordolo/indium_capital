@@ -18,7 +18,7 @@
         <!-- left -->
 
         <!-- cards -->
-        <div class="grid grid-cols-2 gap-8">
+        <div class="grid grid-cols-2 gap-14">
           <!-- cards in loop -->
           <template
             v-for="(item, index) in cards"

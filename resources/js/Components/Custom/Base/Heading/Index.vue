@@ -44,7 +44,7 @@ const classes = computed(() => {
       'font-extrabold',
       'text-[48px]',
       'md:text-[56px]',
-      '2xl:text-[60px]'
+      '2xl:text-[64px]'
     );
   } else {
     baseClasses.push('font-bold');
@@ -67,17 +67,17 @@ const classes = computed(() => {
 
   // h4
   if (props.headingSize === 'h4') {
-    baseClasses.push('text-[20px]', 'md:text-[24px]', '2xl:text-[28px]');
+    baseClasses.push('text-[24px]', 'md:text-[28px]', '2xl:text-[32px]');
   }
 
   // h5
   if (props.headingSize === 'h5') {
-    baseClasses.push('text-[16px]', 'md:text-[18px]', '2xl:text-[20px]');
+    baseClasses.push('text-[20px]', 'md:text-[24px]', '2xl:text-[28px]');
   }
 
   // h6
   if (props.headingSize === 'h6') {
-    baseClasses.push('text-[14px]', 'md:text-[16px]', '2xl:text-[18px]');
+    baseClasses.push('text-[10px]', 'md:text-[20px]', '2xl:text-[24px]');
   }
 
   return baseClasses;
