@@ -28,7 +28,9 @@
         <!-- top -->
 
         <!-- bottom - cards grid -->
-        <div class="grid grid-cols-5 gap-8 mt-12">
+        <div
+          class="grid grid-cols-1 gap-4 xs:gap-6 sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 md:gap-6 mt-12 2xl:grid-cols-4"
+        >
           <!-- cards in loop -->
           <template
             v-for="(item, index) in cards"
@@ -36,7 +38,7 @@
           >
             <!-- single card -->
             <div
-              class="bg-primary-500 p-6 border rounded-xl border-white relative pb-[220px] text-center text-white hover:shadow-2xl transition-all duration-500 hover:border-primary-500 shadow-inner"
+              class="bg-primary-500 p-6 sm:p-4 sm:pb-[220px] md:p-6 md:pb-[220px] border rounded-xl border-white relative pb-[220px] text-center text-white hover:shadow-2xl transition-all duration-500 hover:border-primary-500 shadow-inner"
             >
               <!-- primary logo -->
 

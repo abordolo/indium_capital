@@ -28,7 +28,6 @@
           <!-- background -->
 
           <!-- services blocks -->
-
           <div class="sm:mt-20 flex flex-wrap gap-6 sm:gap-6 md:gap-8">
             <!-- services in loop -->
             <template
@@ -37,7 +36,7 @@
             >
               <!-- single service -->
               <div
-                class="bg-white/90 p-6 sm:p-4 md:p-6 rounded-2xl border shadow sm:shadow-lg pb-16 md:pb-16 sm:pb-16 relative w-full lg:w-[420px] xl:w-[480px]"
+                class="bg-white/90 p-6 rounded-2xl border shadow sm:shadow-lg pb-16 relative w-full lg:w-[420px] xl:w-[480px]"
               >
                 <!-- icon -->
                 <AnimateOnScroll>
