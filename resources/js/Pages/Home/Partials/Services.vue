@@ -16,10 +16,10 @@
 
         <!-- bottom -->
         <div
-          class="mt-12 px-8 rounded-2xl p-8 relative shadow-xl overflow-clip"
+          class="mt-8 sm:mt-12 rounded-2xl pb-4 sm:p-6 md:p-8 relative sm:shadow-xl overflow-clip"
         >
           <!-- background -->
-          <div class="absolute inset-0 -z-10">
+          <div class="absolute inset-0 -z-10 hidden sm:block">
             <img
               src="images/home/services/services-bg.png"
               class="object-cover object-center h-full w-full"
@@ -28,9 +28,8 @@
           <!-- background -->
 
           <!-- services blocks -->
-          <div
-            class="mt-16 bottom-8 grid grid-cols-2 right-8 left-8 gap-8 max-w-[940px]"
-          >
+
+          <div class="sm:mt-20 flex flex-wrap gap-6 sm:gap-6 md:gap-8">
             <!-- services in loop -->
             <template
               v-for="item in items"
@@ -38,7 +37,7 @@
             >
               <!-- single service -->
               <div
-                class="bg-white/90 p-6 rounded-2xl border shadow-lg pb-16 relative"
+                class="bg-white/90 p-6 sm:p-4 md:p-6 rounded-2xl border shadow sm:shadow-lg pb-16 md:pb-16 sm:pb-16 relative w-full lg:w-[420px] xl:w-[480px]"
               >
                 <!-- icon -->
                 <AnimateOnScroll>
@@ -62,7 +61,7 @@
 
                 <!-- text -->
                 <AnimateOnScroll :delay="500">
-                  <BodyText class="mt-2 font-medium">{{ item.text }}</BodyText>
+                  <BodyText class="mt-3 font-medium">{{ item.text }}</BodyText>
                 </AnimateOnScroll>
                 <!-- text -->
 
