@@ -29,7 +29,7 @@
 
           <!-- services blocks -->
           <div
-            class="mt-16 bottom-8 grid grid-cols-2 right-8 left-8 gap-8 max-w-[1200px]"
+            class="mt-16 bottom-8 grid grid-cols-2 right-8 left-8 gap-8 max-w-[940px]"
           >
             <!-- services in loop -->
             <template
@@ -42,7 +42,7 @@
               >
                 <!-- icon -->
                 <AnimateOnScroll>
-                  <div class="relative">
+                  <div class="relative size-10">
                     <img :src="item.icon" />
                     <div class="absolute inset-0"></div>
                   </div>
