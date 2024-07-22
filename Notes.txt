@@ -1,0 +1,43 @@
+Screens:
+  - 2xl: 1536px
+  - xl: 1280px
+  - lg: 1024px
+  - md: 768px
+  - sm: 640px
+  - xs: 480px
+
+Text Scale:
+  - Display
+    - <xs: 48px
+    - >md: 60px
+    - >2xl: 72px
+
+  - H1
+    - <xs: 36px
+    - >md: 40px
+    - >2xl: 48px
+
+  - H2
+    - <xs: 32px
+    - >md: 36px
+    - >2xl: 40px
+
+  - H3
+    - <xs: 28px
+    - >md: 32px
+    - >2xl: 36px
+
+  - H4
+    - <xs: 20px
+    - >md: 24px
+    - >2xl: 28px
+
+  - H5
+    - <xs: 18px
+    - >md: 20px
+    - >2xl: 24px
+
+  - H6
+    - <xs: 16px
+    - >md: 18px
+    - >2xl: 20px

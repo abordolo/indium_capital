@@ -1,80 +1,83 @@
 <template>
-  <component :is="tag" :class="classes">
+  <component
+    :is="tag"
+    :class="classes"
+  >
     <slot />
   </component>
 </template>
 
 <script setup>
 // imports
-import { computed } from "vue";
+import { computed } from 'vue';
 
 // props
 const props = defineProps({
   headingSize: {
     type: String,
-    default: "h1",
+    default: 'h1',
     validator: (value) =>
-      ["h1", "h2", "h3", "h4", "h5", "h6", "display"].includes(value),
+      ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'display'].includes(value),
   },
 });
 
 // tag
 const tag = computed(() => {
-  if (props.headingSize === "display") return "div";
+  if (props.headingSize === 'display') return 'div';
   return props.headingSize;
 });
 
 // classes
 const classes = computed(() => {
   let baseClasses = [
-    "leading-tight",
-    "sm:leading-tight",
-    "md:leading-tight",
-    "lg:leading-tight",
-    "xl:leading-tight",
-    "2xl:leading-tight",
+    'leading-tight',
+    'sm:leading-tight',
+    'md:leading-tight',
+    'lg:leading-tight',
+    'xl:leading-tight',
+    '2xl:leading-tight',
   ];
 
   //   display
-  if (props.headingSize === "display") {
+  if (props.headingSize === 'display') {
     baseClasses.push(
-      "font-extrabold",
-      "text-4xl",
-      "md:text-5xl",
-      "lg:text-7xl",
+      'font-extrabold',
+      'text-[48px]',
+      'md:text-[60px]',
+      '2xl:text-[72px]'
     );
   } else {
-    baseClasses.push("font-bold");
+    baseClasses.push('font-bold');
   }
 
   // h1
-  if (props.headingSize === "h1") {
-    baseClasses.push("text-3xl", "md:text-4xl", "lg:text-5xl");
+  if (props.headingSize === 'h1') {
+    baseClasses.push('text-[36px]', 'md:text-[40px]', '2xl:text-[48px]');
   }
 
   // h2
-  if (props.headingSize === "h2") {
-    baseClasses.push("text-2xl", "md:text-3xl", "lg:text-4xl");
+  if (props.headingSize === 'h2') {
+    baseClasses.push('text-[32px]', 'md:text-[36px]', '2xl:text-[40px]');
   }
 
   // h3
-  if (props.headingSize === "h3") {
-    baseClasses.push("text-xl", "md:text-2xl", "lg:text-3xl");
+  if (props.headingSize === 'h3') {
+    baseClasses.push('text-[28px]', 'md:text-[32px]', '2xl:text-[36px]');
   }
 
   // h4
-  if (props.headingSize === "h4") {
-    baseClasses.push("text-2xl", "md:text-2xl", "lg:text-3xl");
+  if (props.headingSize === 'h4') {
+    baseClasses.push('text-[20px]', 'md:text-[24px]', '2xl:text-[28px]');
   }
 
   // h5
-  if (props.headingSize === "h5") {
-    baseClasses.push("text-lg", "md:text-xl", "lg:text-2xl");
+  if (props.headingSize === 'h5') {
+    baseClasses.push('text-[18px]', 'md:text-[20px]', '2xl:text-[24px]');
   }
 
   // h6
-  if (props.headingSize === "h6") {
-    baseClasses.push("text-base", "md:text-lg", "lg:text-xl");
+  if (props.headingSize === 'h6') {
+    baseClasses.push('text-[16px]', 'md:text-[18px]', '2xl:text-[20px]');
   }
 
   return baseClasses;
