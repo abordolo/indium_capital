@@ -43,8 +43,8 @@ const classes = computed(() => {
     baseClasses.push(
       'font-extrabold',
       'text-[48px]',
-      'md:text-[60px]',
-      '2xl:text-[72px]'
+      'md:text-[56px]',
+      '2xl:text-[60px]'
     );
   } else {
     baseClasses.push('font-bold');

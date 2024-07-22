@@ -8,7 +8,7 @@
     <!-- meta -->
 
     <!-- contents -->
-    <Hero />
+    <Hero2 />
     <Services />
     <Transactions />
     <Team />
@@ -22,6 +22,7 @@
 <script setup>
 // imports
 import Hero from './Partials/Hero.vue';
+import Hero2 from './Partials/Hero2.vue';
 import Services from './Partials/Services.vue';
 import Transactions from './Partials/Transactions.vue';
 import Team from './Partials/Team.vue';

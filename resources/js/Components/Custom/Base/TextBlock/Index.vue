@@ -6,13 +6,13 @@
     }"
   >
     <!-- preHeading heading intro bodyText button -->
-    <div class="space-y-10">
+    <div class="space-y-8">
       <!-- preHeading heading intro bodyText -->
-      <div class="space-y-8">
+      <div class="space-y-6">
         <!-- preHeading heading intro -->
-        <div class="space-y-6">
+        <div class="space-y-4">
           <!-- preHeading and heading -->
-          <div class="space-y-4">
+          <div class="space-y-2">
             <!-- preHeading -->
             <AnimateOnScroll>
               <PreHeading
@@ -60,6 +60,9 @@
       <div
         class="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
         v-if="primaryButtonText || secondaryButtonText"
+        :class="{
+          'justify-center': alignment === 'center',
+        }"
       >
         <!-- primary button -->
         <AnimateOnScroll

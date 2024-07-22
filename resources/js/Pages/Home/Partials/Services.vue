@@ -1,5 +1,5 @@
 <template>
-  <Section class="py-[120px]" id="services">
+  <Section class="py-[80px]" id="services">
     <Container>
       <div class="space-y-16">
         <!-- top -->
@@ -13,11 +13,11 @@
 
         <!-- bottom -->
         <div
-          class="px-8 rounded-3xl p-8 min-h-[540px] relative shadow-xl"
+          class="px-8 rounded-2xl p-8 min-h-[540px] relative shadow-xl overflow-clip"
         >
         <!-- background -->
          <div class="absolute inset-0 -z-10">
-          <img src="images/home/services/services-bg.png" class=" object-cover object-center h-full w-full rounded-3xl">
+          <img src="images/home/services/services-bg.png" class=" object-cover object-center h-full w-full ">
          </div>
         <!-- background -->
 
