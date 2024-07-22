@@ -1,12 +1,12 @@
 <template>
   <Section
-    class="py-[120px] bg-gray-50"
+    class="py-[80px] bg-gray-50"
     id="team"
   >
     <Container>
       <div class="grid grid-cols-2 gap-8">
         <!-- left -->
-        <div>
+        <div class="max-w-[720px]">
           <TextBlock
             :preHeading="preHeading"
             :heading="heading"

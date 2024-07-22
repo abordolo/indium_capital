@@ -1,5 +1,5 @@
 <template>
-  <Section class="py-24 relative">
+  <Section class="py-28 relative">
     <!-- background -->
     <div class="absolute inset-0 -z-10">
       <img

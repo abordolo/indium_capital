@@ -1,6 +1,6 @@
 <template>
   <Section
-    class="py-[120px] relative"
+    class="py-[80px] relative"
     id="transactions"
   >
     <!-- background image -->
@@ -18,7 +18,7 @@
         <!-- top -->
         <div class="flex items-center justify-center">
           <TextBlock
-            class="max-w-[600px]"
+            class="max-w-[720px]"
             :preHeading="preHeading"
             :heading="heading"
             :intro="intro"
@@ -28,7 +28,7 @@
         <!-- top -->
 
         <!-- bottom - cards grid -->
-        <div class="grid grid-cols-3 gap-8 mt-16">
+        <div class="grid grid-cols-5 gap-8 mt-12">
           <!-- cards in loop -->
           <template
             v-for="(item, index) in cards"

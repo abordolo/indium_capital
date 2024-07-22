@@ -72,12 +72,12 @@ const classes = computed(() => {
 
   // h5
   if (props.headingSize === 'h5') {
-    baseClasses.push('text-[18px]', 'md:text-[20px]', '2xl:text-[24px]');
+    baseClasses.push('text-[16px]', 'md:text-[18px]', '2xl:text-[20px]');
   }
 
   // h6
   if (props.headingSize === 'h6') {
-    baseClasses.push('text-[16px]', 'md:text-[18px]', '2xl:text-[20px]');
+    baseClasses.push('text-[14px]', 'md:text-[16px]', '2xl:text-[18px]');
   }
 
   return baseClasses;

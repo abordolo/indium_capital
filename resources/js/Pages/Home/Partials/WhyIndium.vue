@@ -4,7 +4,7 @@
     id="why-indium"
   > -->
   <Section
-    class="py-[120px]"
+    class="py-[80px]"
     id="why-indium"
   >
     <Container>
@@ -21,16 +21,15 @@
         <!-- top -->
 
         <!-- bottom -->
-        <div class="mt-16 flex gap-12 flex-row justify-between">
+        <div class="mt-12 flex gap-12 flex-row justify-between">
           <!-- left cards -->
-          <div class="space-y-12 max-w-[720px]">
+          <div class="space-y-6 max-w-[720px]">
             <!-- right cards in loop -->
             <template
               v-for="(item, index) in cards"
               :key="`why-indium-card-${index}`"
             >
               <!-- single card -->
-
               <div class="flex items-start gap-6">
                 <!-- icon -->
                 <div
@@ -74,7 +73,7 @@
 
           <!-- right image -->
           <div
-            class="relative rounded-2xl shadow-xl overflow-clip min-w-[400px]"
+            class="relative rounded-2xl shadow-xl overflow-clip w-1/2 min-w-[400px]"
           >
             <div class="absolute inset-0">
               <img

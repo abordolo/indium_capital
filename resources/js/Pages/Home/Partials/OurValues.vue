@@ -1,13 +1,13 @@
 <template>
   <Section
-    class="py-[120px] relative"
+    class="py-[80px] relative"
     id="our-values"
   >
     <!-- background image -->
     <div class="absolute inset-0 -z-10">
       <img
         src="images/home/values/bg.png"
-        class="object-cover object-center h-full w-full opacity-50"
+        class="object-cover object-center h-full w-full"
       />
     </div>
     <!-- background image -->
@@ -15,7 +15,7 @@
     <Container>
       <div>
         <!-- top -->
-        <div class="max-w-[640px]">
+        <div class="max-w-[720px]">
           <TextBlock
             :preHeading="preHeading"
             :heading="heading"
@@ -25,7 +25,7 @@
         <!-- top -->
 
         <!-- cards -->
-        <div class="grid grid-cols-2 gap-12 mt-16">
+        <div class="grid grid-cols-4 gap-8 mt-12">
           <!-- right cards in loop -->
           <template
             v-for="(item, index) in cards"
@@ -34,7 +34,7 @@
             <!-- single card -->
             <div class="bg-primary-500 p-6 rounded-xl text-white shadow-xl">
               <!-- icon -->
-              <div class="relative flex">
+              <div class="relative flex size-10">
                 <AnimateOnScroll
                   animateFrom="scale-0 opacity-0"
                   :delay="500"
@@ -46,7 +46,7 @@
               <!-- icon -->
 
               <!-- texts -->
-              <div class="mt-8">
+              <div class="mt-6">
                 <!-- heading -->
                 <AnimateOnScroll :delay="300">
                   <div>

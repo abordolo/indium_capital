@@ -1,10 +1,13 @@
 <template>
-  <Section class="py-[80px]" id="services">
+  <Section
+    class="py-[80px]"
+    id="services"
+  >
     <Container>
-      <div class="space-y-16">
+      <div>
         <!-- top -->
         <TextBlock
-          class="max-w-[600px]"
+          class="max-w-[720px]"
           :preHeading="preHeading"
           :heading="heading"
           :intro="intro"
@@ -13,23 +16,30 @@
 
         <!-- bottom -->
         <div
-          class="px-8 rounded-2xl p-8 min-h-[540px] relative shadow-xl overflow-clip"
+          class="mt-12 px-8 rounded-2xl p-8 relative shadow-xl overflow-clip"
         >
-        <!-- background -->
-         <div class="absolute inset-0 -z-10">
-          <img src="images/home/services/services-bg.png" class=" object-cover object-center h-full w-full ">
-         </div>
-        <!-- background -->
+          <!-- background -->
+          <div class="absolute inset-0 -z-10">
+            <img
+              src="images/home/services/services-bg.png"
+              class="object-cover object-center h-full w-full"
+            />
+          </div>
+          <!-- background -->
 
           <!-- services blocks -->
-          <div class="absolute bottom-8 grid grid-cols-2 right-8 left-8 gap-8">
+          <div
+            class="mt-16 bottom-8 grid grid-cols-2 right-8 left-8 gap-8 max-w-[1200px]"
+          >
             <!-- services in loop -->
             <template
               v-for="item in items"
               :key="item.id"
             >
               <!-- single service -->
-              <div class="bg-white/90 p-6 rounded-2xl border shadow-lg pb-20 relative">
+              <div
+                class="bg-white/90 p-6 rounded-2xl border shadow-lg pb-16 relative"
+              >
                 <!-- icon -->
                 <AnimateOnScroll>
                   <div class="relative">
@@ -43,26 +53,26 @@
                 <AnimateOnScroll :delay="200">
                   <Heading
                     headingSize="h5"
-                    class="mt-6"
+                    class="mt-5"
                   >
                     {{ item.heading }}
                   </Heading>
-                </AnimateOnScroll  :delay="300">
+                </AnimateOnScroll>
                 <!-- heading -->
 
                 <!-- text -->
                 <AnimateOnScroll :delay="500">
-                  <BodyText class="mt-4 font-medium">{{ item.text }}</BodyText>
+                  <BodyText class="mt-2 font-medium">{{ item.text }}</BodyText>
                 </AnimateOnScroll>
                 <!-- text -->
 
                 <!-- link -->
                 <div class="absolute bottom-6">
                   <AnimateOnScroll :delay="700">
-                  <p class="text-sm font-semibold text-primary-500">
-                    Learn more
-                  </p>
-                </AnimateOnScroll>
+                    <p class="text-sm font-semibold text-primary-500">
+                      Learn more
+                    </p>
+                  </AnimateOnScroll>
                 </div>
                 <!-- link -->
               </div>
@@ -70,8 +80,8 @@
             </template>
             <!-- services in loop -->
           </div>
+          <!-- services blocks -->
         </div>
-        <!-- services blocks -->
         <!-- bottom -->
       </div>
     </Container>
