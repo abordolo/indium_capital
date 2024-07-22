@@ -1,10 +1,19 @@
 <template>
   <Section
-    class="py-[80px] bg-gray-50"
+    class="py-[60px] xs:py-[80px] relative"
     id="team"
   >
+    <!-- background image -->
+    <div class="absolute inset-0 -z-10">
+      <img
+        src="images/home/team/bg-pattern.svg"
+        class="object-cover object-center h-full w-full opacity-5"
+      />
+    </div>
+    <!-- background image -->
+
     <Container>
-      <div class="grid grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 gap-12 xl:gap-8 xl:grid-cols-2 2xl:gap-12">
         <!-- left -->
         <div class="max-w-[720px]">
           <TextBlock
@@ -18,7 +27,7 @@
         <!-- left -->
 
         <!-- cards -->
-        <div class="grid grid-cols-2 gap-14">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-6">
           <!-- cards in loop -->
           <template
             v-for="(item, index) in cards"
@@ -48,12 +57,12 @@
 
               <!-- texts wrapper -->
               <div
-                class="bg-gray-100 p-4 pt-[72px] rounded-xl shadow-md group-hover:shadow-xl transition-all duration-300"
+                class="bg-gray-50 p-4 pt-[72px] rounded-xl shadow-md group-hover:shadow-xl transition-all duration-300"
               >
                 <!-- name -->
                 <AnimateOnScroll :delay="index * 50 + 400">
                   <Heading
-                    headingSize="h6"
+                    headingSize="h5"
                     class="text-primary-500"
                   >
                     {{ item.name }}
@@ -64,7 +73,7 @@
                 <!-- designation -->
                 <AnimateOnScroll :delay="index * 50 + 500">
                   <p
-                    class="text-xs mt-2 font-semibold uppercase text-gray-500 tracking-wide"
+                    class="text-sm mt-2 font-semibold uppercase text-gray-500 tracking-wide"
                   >
                     {{ item.designation }}
                   </p>
