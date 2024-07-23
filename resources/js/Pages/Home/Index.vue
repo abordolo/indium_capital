@@ -21,12 +21,12 @@
 
 <script setup>
 // imports
-import Hero from './Partials/Hero3.vue';
-import Services from './Partials/Services.vue';
-import Transactions from './Partials/Transactions.vue';
-import Team from './Partials/Team.vue';
-import WhyIndium from './Partials/WhyIndium.vue';
-import OurValues from './Partials/OurValues.vue';
+import Hero from "./Partials/Hero3.vue";
+import Services from "./Partials/Services.vue";
+import Transactions from "./Partials/Transactions2.vue";
+import Team from "./Partials/Team.vue";
+import WhyIndium from "./Partials/WhyIndium.vue";
+import OurValues from "./Partials/OurValues.vue";
 
 // props
 </script>

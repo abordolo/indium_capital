@@ -62,11 +62,11 @@
               <!-- single card -->
               <SwiperSlide>
                 <div
-                  class="select:none relative mx-auto h-[440px] max-w-[500px] cursor-pointer rounded-xl border border-white bg-primary-500 p-6 pb-[220px] text-center text-white shadow-inner transition-all duration-500 hover:border-primary-500 hover:shadow-2xl"
+                  class="select:none relative mx-auto h-[440px] max-w-[500px] cursor-pointer rounded-xl border bg-white p-6 pb-[220px] text-center shadow transition-all duration-500 hover:shadow-xl"
                 >
                   <!-- primary logo -->
                   <div
-                    class="w- relative flex h-[100px] items-center justify-center rounded-xl bg-white shadow-md"
+                    class="w- relative flex h-[100px] items-center justify-center rounded-xl border bg-white"
                   >
                     <div>
                       <AnimateOnScroll :delay="200">
@@ -85,7 +85,7 @@
 
                   <!-- deal value -->
                   <AnimateOnScroll :delay="300">
-                    <Heading headingSize="h6" class="mt-6">
+                    <Heading headingSize="h6" class="mt-6 text-primary-500">
                       {{ item.dealValue }}
                     </Heading>
                   </AnimateOnScroll>
@@ -93,7 +93,7 @@
 
                   <!-- text -->
                   <AnimateOnScroll :delay="400">
-                    <BodyText class="mt-2 font-medium">{{
+                    <BodyText class="mt-3 font-medium">{{
                       item.text
                     }}</BodyText>
                   </AnimateOnScroll>
@@ -103,7 +103,7 @@
                   <div
                     class="absolute bottom-[90px] left-6 right-6 mt-6 flex h-[90px] items-center justify-center space-x-8 rounded-xl px-4"
                     :class="{
-                      'bg-white':
+                      'border bg-white':
                         item.secondaryLogo1 ||
                         item.intermediateText ||
                         item.secondaryLogo2,
@@ -148,7 +148,7 @@
                       animateFrom="scale-0 opacity-0"
                     >
                       <div
-                        class="rounded border border-primary-700 bg-primary-600 px-2 py-1"
+                        class="rounded border border-primary-600 bg-primary-500 px-2 py-1"
                       >
                         <p class="text-sm font-medium text-white">
                           {{ item.timeFrame }}
