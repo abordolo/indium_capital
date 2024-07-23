@@ -72,7 +72,7 @@ const props = defineProps({
 });
 
 // side menu visibility
-const sideMenuVisible = ref(true);
+const sideMenuVisible = ref(false);
 
 // toggle side menu
 const toggleSideMenu = () => {
