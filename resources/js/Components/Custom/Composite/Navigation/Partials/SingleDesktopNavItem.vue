@@ -5,7 +5,7 @@
     <div v-if="!('subMenu' in navigationItem)">
       <InertiaLink :href="navigationItem.url">
         <div
-          class="font-semibold hover:text-primary-500 transition-colors duration-300"
+          class="font-semibold transition-colors duration-300 hover:text-primary-500"
         >
           {{ navigationItem.name }}
         </div>
@@ -19,7 +19,7 @@
       @mouseenter="showSubMenu = true"
       @mouseleave="showSubMenu = false"
     >
-      <div class="font-semibold cursor-pointer hover:text-primary-500">
+      <div class="cursor-pointer font-semibold hover:text-primary-500">
         {{ navigationItem.name }}
       </div>
 
@@ -30,24 +30,23 @@
       >
         <div
           v-if="showSubMenu"
-          class="z-10 absolute pt-3 transition-all duration-700 w-56"
+          class="absolute z-50 w-56 pt-3 transition-all duration-700"
         >
-          <div class="flex flex-col bg-primary-500 text-white py-4 rounded">
+          <div
+            class="flex flex-col rounded border bg-white py-4 text-primary-500 shadow-xl"
+          >
             <template
               v-for="subMenuItem in navigationItem.subMenu"
               :key="subMenuItem.id"
             >
               <!-- single sub menu item -->
-              <InertiaLink
-                :href="subMenuItem.url"
-                v-smooth-scroll
-              >
+              <InertiaLink :href="subMenuItem.url" v-smooth-scroll>
                 <div
-                  class="group font-semibold px-6 py-2 hover:bg-primary-600 transition-all duration-300 flex items-center justify-between"
+                  class="group flex items-center justify-between px-6 py-2 font-semibold transition-all duration-500 hover:bg-primary-500"
                 >
                   <!-- menu item name -->
                   <span
-                    class="group-hover:translate-x-1 transition-all duration-300"
+                    class="transition-all duration-300 group-hover:translate-x-1 group-hover:text-white"
                   >
                     {{ subMenuItem.name }}
                   </span>
@@ -55,7 +54,7 @@
 
                   <!-- arrow -->
                   <span
-                    class="hidden group-hover:block transition-all duration-300"
+                    class="hidden text-white transition-all duration-300 group-hover:block"
                   >
                     &rarr;</span
                   >
@@ -76,7 +75,7 @@
 
 <script setup>
 // imports
-import { ref } from 'vue';
+import { ref } from "vue";
 
 // props
 const props = defineProps({

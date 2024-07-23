@@ -1,19 +1,16 @@
 <template>
-  <Section
-    class="py-[60px] xs:py-[80px] relative overflow-clip"
-    id="team"
-  >
+  <Section class="relative overflow-clip py-[60px] xs:py-[80px]" id="team">
     <!-- background image -->
     <div class="absolute inset-0 -z-10 animate-team_bg">
       <img
         src="images/home/team/bg-pattern.svg"
-        class="object-cover object-center h-full w-full opacity-5"
+        class="h-full w-full object-cover object-center opacity-5"
       />
     </div>
     <!-- background image -->
 
     <Container>
-      <div class="grid grid-cols-1 gap-12 xl:gap-8 xl:grid-cols-2 2xl:gap-12">
+      <div class="grid grid-cols-1 gap-12 xl:grid-cols-2 xl:gap-8 2xl:gap-12">
         <!-- left -->
         <div class="max-w-[720px]">
           <TextBlock
@@ -27,27 +24,24 @@
         <!-- left -->
 
         <!-- cards -->
-        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-6">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-6 xl:gap-10">
           <!-- cards in loop -->
-          <template
-            v-for="(item, index) in cards"
-            :key="`team-card-${index}`"
-          >
+          <template v-for="(item, index) in cards" :key="`team-card-${index}`">
             <!-- single team card -->
-            <div class="group pt-[50px] relative cursor-pointer">
+            <div class="group relative cursor-pointer pt-[50px]">
               <!-- image flex container -->
-              <div class="flex absolute top-0">
+              <div class="absolute top-0 flex">
                 <!-- rounded image wrapper -->
                 <AnimateOnScroll
                   animateFrom="opacity-0 scale-0"
                   :delay="index * 100 + 200"
                 >
                   <div
-                    class="border-primary-500 rounded-full bg-white border-2 transition-all duration-300"
+                    class="rounded-full border-2 border-primary-500 bg-white transition-all duration-300"
                   >
                     <img
                       :src="item.image"
-                      class="grayscale group-hover:grayscale-0 transition-all duration-500"
+                      class="grayscale transition-all duration-500 group-hover:grayscale-0"
                     />
                   </div>
                 </AnimateOnScroll>
@@ -57,14 +51,11 @@
 
               <!-- texts wrapper -->
               <div
-                class="bg-gray-50 p-4 pt-[72px] rounded-xl shadow-md group-hover:shadow-xl transition-all duration-300"
+                class="rounded-xl bg-gray-50 p-4 pt-[72px] shadow-md transition-all duration-300 group-hover:shadow-xl"
               >
                 <!-- name -->
                 <AnimateOnScroll :delay="index * 50 + 400">
-                  <Heading
-                    headingSize="h6"
-                    class="text-primary-500"
-                  >
+                  <Heading headingSize="h6" class="text-primary-500">
                     {{ item.name }}
                   </Heading>
                 </AnimateOnScroll>
@@ -73,7 +64,7 @@
                 <!-- designation -->
                 <AnimateOnScroll :delay="index * 50 + 500">
                   <p
-                    class="text-sm mt-2 font-semibold uppercase text-gray-500 tracking-wide"
+                    class="mt-2 text-xs font-semibold uppercase text-gray-500 md:text-sm"
                   >
                     {{ item.designation }}
                   </p>
@@ -98,43 +89,43 @@
 // props
 
 // variables
-const preHeading = 'Lorem Ipsum Team';
-const heading = 'Lorem Ipsum Team Heading';
+const preHeading = "Lorem Ipsum Team";
+const heading = "Lorem Ipsum Team Heading";
 const intro =
-  'Lorem ipsum text for teams section. Lorem ipsum text for teams section. Lorem ipsum text for teams section.';
-const primaryButtonText = 'Know More';
-const primaryButtonUrl = '#';
+  "Lorem ipsum text for teams section. Lorem ipsum text for teams section. Lorem ipsum text for teams section.";
+const primaryButtonText = "Know More";
+const primaryButtonUrl = "#";
 
 // cards
 const cards = [
   {
-    image: '/images/home/team/nitish.png',
-    name: 'Nitish Agrawal',
-    designation: 'Founder & Managing Director',
+    image: "/images/home/team/nitish.png",
+    name: "Nitish Agrawal",
+    designation: "Founder & Managing Director",
   },
 
   {
-    image: '/images/home/team/krithika.png',
-    name: 'Krithika Sivaraman',
-    designation: 'Senior Vice President',
+    image: "/images/home/team/krithika.png",
+    name: "Krithika Sivaraman",
+    designation: "Senior Vice President",
   },
 
   {
-    image: '/images/home/team/swami.png',
-    name: 'Swami Swaminathan',
-    designation: 'Advisor',
+    image: "/images/home/team/swami.png",
+    name: "Swami Swaminathan",
+    designation: "Advisor",
   },
 
   {
-    image: '/images/home/team/ravi.png',
-    name: 'Ravi Virmani',
-    designation: 'Advisor',
+    image: "/images/home/team/ravi.png",
+    name: "Ravi Virmani",
+    designation: "Advisor",
   },
 
   {
-    image: '/images/home/team/sanjiv.png',
-    name: 'Sanjiv Lochan',
-    designation: 'Advisor',
+    image: "/images/home/team/sanjiv.png",
+    name: "Sanjiv Lochan",
+    designation: "Advisor",
   },
 ];
 </script>
