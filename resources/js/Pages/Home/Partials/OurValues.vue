@@ -23,7 +23,7 @@
 
         <!-- cards -->
         <div
-          class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-4 md:gap-8 xl:gap-10 2xl:grid-cols-4 2xl:gap-8"
+          class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-4 md:gap-8 xl:grid-cols-4 xl:gap-6 2xl:gap-8"
         >
           <!-- right cards in loop -->
           <template

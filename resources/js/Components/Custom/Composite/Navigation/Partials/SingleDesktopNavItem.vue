@@ -5,7 +5,7 @@
     <div v-if="!('subMenu' in navigationItem)">
       <InertiaLink :href="navigationItem.url">
         <div
-          class="font-semibold transition-colors duration-300 hover:text-primary-500"
+          class="text-sm font-semibold transition-colors duration-300 hover:text-primary-500"
         >
           {{ navigationItem.name }}
         </div>
@@ -19,7 +19,7 @@
       @mouseenter="showSubMenu = true"
       @mouseleave="showSubMenu = false"
     >
-      <div class="cursor-pointer font-semibold hover:text-primary-500">
+      <div class="cursor-pointer text-sm font-semibold hover:text-primary-500">
         {{ navigationItem.name }}
       </div>
 
@@ -30,7 +30,7 @@
       >
         <div
           v-if="showSubMenu"
-          class="absolute z-50 w-56 pt-3 transition-all duration-700"
+          class="absolute z-50 w-56 -translate-x-16 pt-3 transition-all duration-700"
         >
           <div
             class="flex flex-col rounded border bg-white py-4 text-primary-500 shadow-xl"
@@ -46,7 +46,7 @@
                 >
                   <!-- menu item name -->
                   <span
-                    class="transition-all duration-300 group-hover:translate-x-1 group-hover:text-white"
+                    class="text-sm transition-all duration-300 group-hover:text-white"
                   >
                     {{ subMenuItem.name }}
                   </span>
@@ -54,7 +54,7 @@
 
                   <!-- arrow -->
                   <span
-                    class="hidden text-white transition-all duration-300 group-hover:block"
+                    class="text-white opacity-0 transition-all duration-300 group-hover:opacity-100"
                   >
                     &rarr;</span
                   >

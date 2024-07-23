@@ -1,5 +1,5 @@
 <template>
-  <p class="text-xl leading-9 font-medium">
+  <p class="text-lg font-medium leading-8">
     <slot />
   </p>
 </template>
