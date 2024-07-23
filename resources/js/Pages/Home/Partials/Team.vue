@@ -62,7 +62,7 @@
                 <!-- name -->
                 <AnimateOnScroll :delay="index * 50 + 400">
                   <Heading
-                    headingSize="h5"
+                    headingSize="h6"
                     class="text-primary-500"
                   >
                     {{ item.name }}
