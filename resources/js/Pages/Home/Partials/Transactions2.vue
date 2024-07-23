@@ -62,7 +62,7 @@
               <!-- single card -->
               <SwiperSlide>
                 <div
-                  class="select:none relative mx-auto h-[440px] max-w-[500px] cursor-pointer rounded-xl border bg-white p-6 pb-[220px] text-center shadow transition-all duration-500 hover:shadow-xl"
+                  class="select:none relative mx-auto h-[440px] max-w-[420px] cursor-pointer rounded-xl border bg-white p-6 pb-[220px] text-center shadow transition-all duration-500 hover:shadow-xl"
                 >
                   <!-- primary logo -->
                   <div
