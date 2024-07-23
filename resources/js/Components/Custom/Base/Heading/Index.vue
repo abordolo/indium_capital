@@ -74,7 +74,7 @@ const classes = computed(() => {
 
   // h6
   if (props.headingSize === "h6") {
-    baseClasses.push("text-[20px]", "2xl:text-[24px]");
+    baseClasses.push("text-[20px]", "2xl:text-[22px]");
   }
 
   return baseClasses;
