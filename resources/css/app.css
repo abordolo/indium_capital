@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-.swiper-horizontal {
+#transactions .swiper-horizontal, #testimonials .swiper-horizontal {
   padding-bottom: 60px;
 }
 

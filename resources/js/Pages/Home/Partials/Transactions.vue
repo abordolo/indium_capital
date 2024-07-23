@@ -176,15 +176,12 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, A11y, Autoplay } from "swiper/modules";
 import "swiper/css";
 
-const modules = [Pagination, A11y, Autoplay];
-
-// props
-
 // variables
 const preHeading = "Transactions";
 const heading = "Lorem Ipsum Heading for Transactions";
 const intro =
   "Lorem ipsum introduction text for services. Lorem ipsum introduction text for services. Lorem ipsum introduction text for services.";
+const modules = [Pagination, A11y, Autoplay];
 const cards = [
   // marengo
   {

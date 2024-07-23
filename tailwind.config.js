@@ -1,100 +1,87 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
-import forms from '@tailwindcss/forms';
+import defaultTheme from "tailwindcss/defaultTheme";
+import forms from "@tailwindcss/forms";
 
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
-    './storage/framework/views/*.php',
-    './resources/views/**/*.blade.php',
-    './resources/js/**/*.vue',
+    "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
+    "./storage/framework/views/*.php",
+    "./resources/views/**/*.blade.php",
+    "./resources/js/**/*.vue",
   ],
 
   theme: {
     extend: {
       animation: {
-        hero_bg: 'hero_bg 100s infinite',
-        team_bg: 'team_bg 100s infinite',
-        our_values_bg: 'our_values_bg 100s infinite linear',
+        hero_bg: "hero_bg 100s infinite",
+        team_bg: "team_bg 100s infinite",
+        our_values_bg: "our_values_bg 100s infinite linear",
       },
 
       keyframes: {
         hero_bg: {
-          '0%': {
-            transform: 'scale(100%)',
-            rotate: '0deg',
-            translate: '0px',
+          "0%": {
+            transform: "scale(100%)",
+            rotate: "0deg",
+            translate: "0px",
           },
-          '33%': {
-            transform: 'scale(150%)',
-            rotate: '5deg',
-            translate: '10px',
+          "33%": {
+            transform: "scale(150%)",
+            rotate: "5deg",
+            translate: "10px",
           },
-          '100%': {
-            transform: 'scale(100%)',
-            rotate: '0deg',
-            translate: '0px',
+          "100%": {
+            transform: "scale(100%)",
+            rotate: "0deg",
+            translate: "0px",
           },
         },
 
         team_bg: {
-          '0%': {
-            transform: 'scale(100%)',
+          "0%": {
+            transform: "scale(100%)",
           },
-          '50%': {
-            transform: 'scale(120%)',
+          "50%": {
+            transform: "scale(120%)",
           },
-          '100%': {
-            transform: 'scale(100%)',
+          "100%": {
+            transform: "scale(100%)",
           },
         },
 
         our_values_bg: {
-          '0%': {
-            opacity: '1',
+          "0%": {
+            opacity: "1",
           },
-          '50%': {
-            opacity: '0.5',
+          "50%": {
+            opacity: "0.5",
           },
-          '100%': {
-            opacity: '1',
+          "100%": {
+            opacity: "1",
           },
         },
       },
 
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
 
       screens: {
-        xs: '480px',
+        xs: "480px",
       },
 
       colors: {
-        // primary: {
-        //   50: '#E0F7FF',
-        //   100: '#B3E5FC',
-        //   200: '#81D4FA',
-        //   300: '#4FC3F7',
-        //   400: '#29B6F6',
-        //   500: '#007DC5',
-        //   600: '#0369A1',
-        //   700: '#075985',
-        //   800: '#0C4A6E',
-        //   900: '#103C59',
-        // },
-
         primary: {
-          50: '#E6F3FC',
-          100: '#CCE7F9',
-          200: '#99CFF3',
-          300: '#66B8ED',
-          400: '#33A1E7',
-          500: '#007DC5',
-          600: '#006BA6',
-          700: '#005988',
-          800: '#00466A',
-          900: '#00354D',
+          50: "#E6F3FC",
+          100: "#CCE7F9",
+          200: "#99CFF3",
+          300: "#66B8ED",
+          400: "#33A1E7",
+          500: "#007DC5",
+          600: "#006BA6",
+          700: "#005988",
+          800: "#00466A",
+          900: "#00354D",
         },
       },
     },
