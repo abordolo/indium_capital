@@ -1,10 +1,10 @@
 <template>
   <Section
-    class="py-[60px] xs:py-[80px] relative"
+    class="py-[60px] xs:py-[80px] relative overflow-clip"
     id="team"
   >
     <!-- background image -->
-    <div class="absolute inset-0 -z-10">
+    <div class="absolute inset-0 -z-10 animate-team_bg">
       <img
         src="images/home/team/bg-pattern.svg"
         class="object-cover object-center h-full w-full opacity-5"

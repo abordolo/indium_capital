@@ -50,7 +50,7 @@
                 <!-- heading -->
                 <AnimateOnScroll :delay="200">
                   <Heading
-                    headingSize="h5"
+                    headingSize="h6"
                     class="mt-5"
                   >
                     {{ item.heading }}

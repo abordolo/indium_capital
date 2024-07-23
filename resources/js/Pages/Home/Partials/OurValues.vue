@@ -4,7 +4,7 @@
     id="our-values"
   >
     <!-- background image -->
-    <div class="absolute inset-0 -z-10">
+    <div class="absolute inset-0 -z-10 animate-our_values_bg">
       <img
         src="images/home/values/bg.png"
         class="object-cover object-center h-full w-full"

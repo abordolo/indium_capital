@@ -12,6 +12,56 @@ export default {
 
   theme: {
     extend: {
+      animation: {
+        hero_bg: 'hero_bg 100s infinite',
+        team_bg: 'team_bg 100s infinite',
+        our_values_bg: 'our_values_bg 100s infinite linear',
+      },
+
+      keyframes: {
+        hero_bg: {
+          '0%': {
+            transform: 'scale(100%)',
+            rotate: '0deg',
+            translate: '0px',
+          },
+          '33%': {
+            transform: 'scale(150%)',
+            rotate: '5deg',
+            translate: '10px',
+          },
+          '100%': {
+            transform: 'scale(100%)',
+            rotate: '0deg',
+            translate: '0px',
+          },
+        },
+
+        team_bg: {
+          '0%': {
+            transform: 'scale(100%)',
+          },
+          '50%': {
+            transform: 'scale(120%)',
+          },
+          '100%': {
+            transform: 'scale(100%)',
+          },
+        },
+
+        our_values_bg: {
+          '0%': {
+            opacity: '1',
+          },
+          '50%': {
+            opacity: '0.5',
+          },
+          '100%': {
+            opacity: '1',
+          },
+        },
+      },
+
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },

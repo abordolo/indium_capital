@@ -1,11 +1,18 @@
 <template>
   <Section
-    class="py-[60px] xs-[80px] sm:py-[100px] md:[120px] relative bg-primary-500"
+    class="py-[60px] xs-[80px] sm:py-[100px] md:[120px] relative bg-primary-500 overflow-clip"
   >
     <!-- background -->
-    <div class="absolute inset-0 z-10">
+    <div class="absolute hidden md:block inset-0 z-10 animate-hero_bg">
       <img
-        src="images/home/hero/bg-pattern1.svg"
+        src="images/home/hero/bg-pattern-big.svg"
+        class="object-cover object-left w-full h-full opacity-10"
+      />
+    </div>
+
+    <div class="absolute md:hidden inset-0 z-10 animate-hero_bg">
+      <img
+        src="images/home/hero/bg-pattern-medium.svg"
         class="object-cover object-left w-full h-full opacity-10"
       />
     </div>
