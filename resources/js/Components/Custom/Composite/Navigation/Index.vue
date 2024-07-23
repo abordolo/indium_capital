@@ -6,8 +6,16 @@
         <Logo />
 
         <!-- desktop navigation -->
-        <DesktopNavigation :navigationItems="navigationItems" />
+        <div class="hidden lg:block">
+          <DesktopNavigation :navigationItems="navigationItems" />
+        </div>
         <!-- desktop navigation -->
+
+        <!-- mobile navigation -->
+        <div class="lg:hidden">
+          <MobileNavigation :navigationItems="navigationItems" />
+        </div>
+        <!-- mobile navigation -->
       </div>
       <!-- navigation bar -->
     </Container>
@@ -18,6 +26,7 @@
 // imports
 import { ref } from "vue";
 import DesktopNavigation from "./Partials/DesktopNavigation.vue";
+import MobileNavigation from "./Partials/MobileNavigation.vue";
 
 // navigation link
 const navigationItems = ref([

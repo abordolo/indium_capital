@@ -18,6 +18,7 @@
       v-else
       @mouseenter="showSubMenu = true"
       @mouseleave="showSubMenu = false"
+      @blur="showSubMenu = false"
     >
       <div class="cursor-pointer text-sm font-semibold hover:text-primary-500">
         {{ navigationItem.name }}

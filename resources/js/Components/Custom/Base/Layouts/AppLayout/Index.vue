@@ -14,6 +14,6 @@
 
 <script setup>
 //imports
-import Navigation from "@/Components/Custom/Composite/Navigation/Index2.vue";
+import Navigation from "@/Components/Custom/Composite/Navigation/Index.vue";
 import Footer from "@/Components/Custom/Composite/Footer/Index.vue";
 </script>
