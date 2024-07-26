@@ -16,7 +16,8 @@
     <WhyIndium />
     <OurValues />
     <Testimonials />
-    <Insights />
+    <!-- <Insights /> -->
+    <ContactUsSection />
     <!-- contents -->
   </div>
   <!-- page wrapper -->
@@ -33,6 +34,7 @@ import WhyIndium from "./Partials/WhyIndium.vue";
 import OurValues from "./Partials/OurValues.vue";
 import Testimonials from "./Partials/Testimonials.vue";
 import Insights from "./Partials/Insights.vue";
+import ContactUsSection from "./Partials/ContactUsSection.vue";
 
 // props
 </script>

@@ -1,10 +1,10 @@
 <template>
-  <Section class="py-32 relative">
+  <Section class="relative py-32">
     <!-- background -->
     <div class="absolute inset-0 -z-10">
       <img
         src="images/home/hero/bg.png"
-        class="object-cover object-center w-full h-full"
+        class="h-full w-full object-cover object-center"
       />
     </div>
     <!-- background -->
@@ -26,22 +26,16 @@
         <!-- left -->
 
         <!-- right -->
-        <div class="flex flex-col text-white gap-12">
-          <template
-            v-for="(item, index) in items"
-            :key="item.id"
-          >
+        <div class="flex flex-col gap-12 text-white">
+          <template v-for="(item, index) in items" :key="item.id">
             <!-- single block -->
             <AnimateOnScroll :delay="index * 100 + 400">
               <div
-                class="bg-primary-500 p-6 rounded-2xl flex space-x-3 items-center border border-white"
+                class="flex items-center space-x-3 rounded-2xl border border-white bg-primary-500 p-6"
               >
                 <!-- icon -->
-                <div class="bg-white rounded-full p-6 relative shrink-0">
-                  <img
-                    :src="item.icon"
-                    class="w-12 h-12"
-                  />
+                <div class="relative shrink-0 rounded-full bg-white p-6">
+                  <img :src="item.icon" class="h-12 w-12" />
                   <div class="absolute inset-0"></div>
                 </div>
                 <!-- icon -->
@@ -70,34 +64,34 @@
 // props
 
 // variables
-const preHeading = 'Lorem Ipsum';
-const heading = 'Lorem Ipsum Heading';
+const preHeading = "Lorem Ipsum";
+const heading = "Lorem Ipsum Heading";
 const intro =
-  'We are an Investment Bank focusing on Fund-Raising and Mergers & Acquisitions Advisory.';
-const primaryButtonText = 'Services';
-const secondaryButtonText = 'Transactions';
+  "We are an Investment Bank focusing on Fund-Raising and Mergers & Acquisitions Advisory.";
+const primaryButtonText = "Services";
+const secondaryButtonText = "Transactions";
 
 // items
 const items = [
   {
     id: 1,
-    heading: '30+',
-    subHeading: 'Years of team experience',
-    icon: 'images/home/hero/experience.svg',
+    heading: "30+",
+    subHeading: "Years of team experience",
+    icon: "images/home/hero/experience.svg",
   },
 
   {
     id: 1,
-    heading: '50+',
-    subHeading: 'Deals advised',
-    icon: 'images/home/hero/deal-count.svg',
+    heading: "50+",
+    subHeading: "Deals advised",
+    icon: "images/home/hero/deal-count.svg",
   },
 
   {
     id: 1,
-    heading: '$1bn+',
-    subHeading: 'Deal value',
-    icon: 'images/home/hero/deal-value.svg',
+    heading: "$1bn+",
+    subHeading: "Deal value",
+    icon: "images/home/hero/deal-value.svg",
   },
 ];
 </script>
