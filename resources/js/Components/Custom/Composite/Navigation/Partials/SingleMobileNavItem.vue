@@ -49,7 +49,13 @@
             >
               <!-- single sub menu -->
               <div class="ml-2">
-                <InertiaLink :href="subItem.url" @click="$emit('closeMenu')">
+                <InertiaLink
+                  :href="subItem.url"
+                  @click="
+                    $emit('closeMenu');
+                    showSubMenu = false;
+                  "
+                >
                   <!-- sub menu name -->
                   <nav class="font-medium text-white hover:text-primary-500">
                     {{ subItem.name }}

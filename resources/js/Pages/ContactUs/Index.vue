@@ -138,19 +138,19 @@ const heading = "Contact Us";
 const intro = "It is always nice to hear from you.";
 const contactBlocks = [
   {
-    icon: "images/home/contact-us-section/phone.svg",
+    icon: "images/home/contact/phone.svg",
     title: "Phone",
     values: ["+91 123 456 7890"],
   },
 
   {
-    icon: "images/home/contact-us-section/email.svg",
+    icon: "images/home/contact/email.svg",
     title: "Email",
     values: ["contact@indiumcapital.com"],
   },
 
   {
-    icon: "images/home/contact-us-section/address.svg",
+    icon: "images/home/contact/address.svg",
     title: "Address",
     values: [
       "Address Line 1",

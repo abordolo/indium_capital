@@ -24,12 +24,13 @@
 
 <script setup>
 // imports
-import { ref } from "vue";
+import { ref, computed } from "vue";
+import { usePage } from "@inertiajs/vue3";
 import DesktopNavigation from "./Partials/DesktopNavigation.vue";
 import MobileNavigation from "./Partials/MobileNavigation.vue";
 
 // navigation link
-const navigationItems = ref([
+const allNavigationItems = ref([
   {
     id: 1,
     name: "Home",
@@ -102,4 +103,55 @@ const navigationItems = ref([
     url: route("contact"),
   },
 ]);
+
+const allNavigationItemsAlt = ref([
+  {
+    id: 1,
+    name: "Home",
+    url: route("home"),
+  },
+
+  {
+    id: 5,
+    name: "Contact",
+    url: route("contact"),
+  },
+]);
+
+const showAllNavigationItems = () => {
+  let anchorTags = ["/"];
+  allNavigationItems.value.map((item) => {
+    if (item.subMenu) {
+      item.subMenu.map((subItem) => {
+        anchorTags.push(subItem.url);
+      });
+    }
+  });
+
+  // console.log("Anchor tags:", anchorTags);
+
+  let result = false;
+  // anchorTags.map((tag) => {
+  //   if (usePage().url.endsWith(tag)) {
+  //     result = true;
+  //   }
+  // });
+
+  for (let i = 0; i < anchorTags.length; i++) {
+    if (usePage().url.endsWith(anchorTags[i])) {
+      result = true;
+      break;
+    }
+  }
+
+  return result;
+};
+
+const navigationItems = computed(() => {
+  if (showAllNavigationItems()) {
+    return allNavigationItems.value;
+  } else {
+    return allNavigationItemsAlt.value;
+  }
+});
 </script>
