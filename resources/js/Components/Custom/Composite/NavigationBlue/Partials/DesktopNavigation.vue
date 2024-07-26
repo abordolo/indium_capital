@@ -1,6 +1,6 @@
 <template>
   <!-- contents wrapper -->
-  <div class="flex items-center space-x-12">
+  <div class="flex items-center space-x-16">
     <!-- navigation items loop -->
     <template v-for="item in navigationItems" :key="item.id">
       <!-- single navigation item -->
@@ -14,7 +14,7 @@
 
 <script setup>
 // imports
-import SingleDesktopNavItem from "./SingleDesktopNavItem2.vue";
+import SingleDesktopNavItem from "./SingleDesktopNavItem.vue";
 
 // props
 const props = defineProps({
