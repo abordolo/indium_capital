@@ -11,7 +11,7 @@
     <div class="absolute inset-0 -z-10 md:hidden">
       <img
         src="images/home/transactions/transactions-pattern-medium.svg"
-        class="h-full w-full object-cover object-center opacity-40"
+        class="h-full w-full object-cover object-top opacity-40"
       />
     </div>
     <!-- background image -->

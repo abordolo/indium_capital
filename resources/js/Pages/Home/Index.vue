@@ -9,12 +9,14 @@
 
     <!-- contents -->
     <Hero />
+    <Specialization />
     <Services />
     <Transactions />
     <Team />
     <WhyIndium />
     <OurValues />
     <Testimonials />
+    <Insights />
     <!-- contents -->
   </div>
   <!-- page wrapper -->
@@ -23,12 +25,14 @@
 <script setup>
 // imports
 import Hero from "./Partials/Hero3.vue";
+import Specialization from "./Partials/Specialization.vue";
 import Services from "./Partials/Services.vue";
 import Transactions from "./Partials/Transactions2.vue";
 import Team from "./Partials/Team.vue";
 import WhyIndium from "./Partials/WhyIndium.vue";
 import OurValues from "./Partials/OurValues.vue";
 import Testimonials from "./Partials/Testimonials.vue";
+import Insights from "./Partials/Insights.vue";
 
 // props
 </script>

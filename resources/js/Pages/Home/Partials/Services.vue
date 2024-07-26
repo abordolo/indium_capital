@@ -1,8 +1,5 @@
 <template>
-  <Section
-    class="py-[80px]"
-    id="services"
-  >
+  <Section class="pb-[80px] pt-[10px]" id="services">
     <Container>
       <div>
         <!-- top -->
@@ -16,27 +13,24 @@
 
         <!-- bottom -->
         <div
-          class="mt-8 sm:mt-12 rounded-2xl pb-4 sm:p-6 md:p-8 relative sm:shadow-xl overflow-clip"
+          class="relative mt-8 overflow-clip rounded-2xl pb-4 sm:mt-12 sm:p-6 sm:shadow-xl md:p-8"
         >
           <!-- background -->
           <div class="absolute inset-0 -z-10 hidden sm:block">
             <img
               src="images/home/services/services-bg.png"
-              class="object-cover object-center h-full w-full"
+              class="h-full w-full object-cover object-center"
             />
           </div>
           <!-- background -->
 
           <!-- services blocks -->
-          <div class="sm:mt-20 flex flex-wrap gap-6 sm:gap-6 md:gap-8">
+          <div class="flex flex-wrap gap-6 sm:mt-20 sm:gap-6 md:gap-8">
             <!-- services in loop -->
-            <template
-              v-for="item in items"
-              :key="item.id"
-            >
+            <template v-for="item in items" :key="item.id">
               <!-- single service -->
               <div
-                class="bg-white/90 p-6 rounded-2xl border shadow sm:shadow-lg pb-16 relative w-full lg:w-[420px] xl:w-[480px]"
+                class="relative w-full rounded-2xl border bg-white/90 p-6 pb-16 shadow sm:shadow-lg lg:w-[420px] xl:w-[480px]"
               >
                 <!-- icon -->
                 <AnimateOnScroll>
@@ -49,10 +43,7 @@
 
                 <!-- heading -->
                 <AnimateOnScroll :delay="200">
-                  <Heading
-                    headingSize="h6"
-                    class="mt-5"
-                  >
+                  <Heading headingSize="h6" class="mt-5">
                     {{ item.heading }}
                   </Heading>
                 </AnimateOnScroll>
@@ -92,26 +83,26 @@
 // props
 
 // consts
-const preHeading = 'Our Services';
-const heading = 'Lorem Ipsum Services Heading';
+const preHeading = "Our Services";
+const heading = "Lorem Ipsum Services Heading";
 const intro =
-  'Lorem ipsum introduction text for services. Lorem ipsum introduction text for services. Lorem ipsum introduction text for services. ';
+  "Lorem ipsum introduction text for services. Lorem ipsum introduction text for services. Lorem ipsum introduction text for services. ";
 
 const items = [
   {
     id: 1,
-    icon: 'images/home/services/fund-raising.svg',
-    heading: 'Fund Raising Advisory',
-    text: 'Raising Capital to fund clients’ growth strategies.',
-    url: '#',
+    icon: "images/home/services/fund-raising.svg",
+    heading: "Fund Raising Advisory",
+    text: "Raising Capital to fund clients’ growth strategies.",
+    url: "#",
   },
 
   {
     id: 2,
-    icon: 'images/home/services/merger.svg',
-    heading: 'Merger & Acquisition Advisory',
-    text: 'Evaluation, advisory and execution of acquisition, divestment & sale transactions.',
-    url: '#',
+    icon: "images/home/services/merger.svg",
+    heading: "Merger & Acquisition Advisory",
+    text: "Evaluation, advisory and execution of acquisition, divestment & sale transactions.",
+    url: "#",
   },
 ];
 </script>
