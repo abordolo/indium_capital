@@ -92,9 +92,9 @@ const links = [
   {
     heading: "Socials",
     items: [
-      { icon: "/images/footer/facebook.svg", name: "Facebook", url: "#" },
-      { icon: "/images/footer/instagram.svg", name: "Instagram", url: "#" },
-      { icon: "/images/footer/linkedin.svg", name: "LinkedIn", url: "#" },
+      { icon: "images/footer/facebook.svg", name: "Facebook", url: "#" },
+      { icon: "images/footer/instagram.svg", name: "Instagram", url: "#" },
+      { icon: "images/footer/linkedin.svg", name: "LinkedIn", url: "#" },
     ],
   },
 ];
