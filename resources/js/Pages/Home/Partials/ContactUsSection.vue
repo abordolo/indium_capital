@@ -87,24 +87,24 @@
 // variables
 const preHeading = "Lorem Ipsum Preheading";
 const heading = "Lorem Ipsum Contact Us Heading";
-const intro = "Lorem ipsum testimonials contact us introduction text.";
+const intro = "Lorem ipsum testimonials contact us introduction text. ";
 
 // blocks
 const blocks = [
   {
-    icon: "images/home/contact-us-section/phone.svg",
+    icon: "/images/home/contact-us-section/phone.svg",
     title: "Phone",
     values: ["+91 123 456 7890"],
   },
 
   {
-    icon: "images/home/contact-us-section/email.svg",
+    icon: "/images/home/contact-us-section/email.svg",
     title: "Email",
     values: ["contact@indiumcapital.com"],
   },
 
   {
-    icon: "images/home/contact-us-section/address.svg",
+    icon: "/images/home/contact-us-section/address.svg",
     title: "Address",
     values: [
       "Address Line 1",
