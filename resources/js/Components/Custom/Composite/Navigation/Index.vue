@@ -99,7 +99,7 @@ const navigationItems = ref([
   {
     id: 5,
     name: "Contact",
-    url: "/contact-us",
+    url: route("contact"),
   },
 ]);
 </script>

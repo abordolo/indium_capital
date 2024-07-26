@@ -27,6 +27,13 @@ import AnimateOnScroll from "@/Components/Custom/Base/AnimateOnScroll/Index.vue"
 
 // buttons
 import PrimaryButton from "@/Components/Custom/Base/Buttons/PrimaryButton.vue";
+import SecondaryButton from "@/Components/Custom/Base/Buttons/SecondaryButton.vue";
+
+// page header
+import PageHeader from "@/Components/Custom/Composite/PageHeader/Index.vue";
+
+// form input
+import FormInput from "@/Components/Custom/Base/FormInput/Index.vue";
 
 const appName = import.meta.env.VITE_APP_NAME || "Laravel";
 
@@ -74,6 +81,13 @@ createInertiaApp({
 
         // buttons
         .component("PrimaryButton", PrimaryButton)
+        .component("SecondaryButton", SecondaryButton)
+
+        // page header
+        .component("PageHeader", PageHeader)
+
+        // form input
+        .component("FormInput", FormInput)
 
         // mount
         .mount(el)

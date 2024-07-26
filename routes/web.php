@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactUsPageController;
 use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
@@ -10,3 +11,4 @@ use Inertia\Inertia;
 //     return Inertia::render('Test/Index');
 // });
 Route::get('/', [HomePageController::class, 'index'])->name('home');
+Route::get('/contact', [ContactUsPageController::class, 'index'])->name('contact');
