@@ -7,7 +7,9 @@
           <div class="grid grid-cols-12 gap-10">
             <!-- logo -->
             <div class="col-span-12 md:col-span-6 lg:col-span-8">
-              <Logo white />
+              <div class="flex">
+                <Logo white />
+              </div>
             </div>
             <!-- logo -->
 

@@ -13,7 +13,7 @@ export default {
   theme: {
     extend: {
       animation: {
-        hero_bg: "hero_bg 100s infinite",
+        hero_bg: "hero_bg 50s infinite",
         team_bg: "team_bg 100s infinite",
         our_values_bg: "our_values_bg 100s infinite linear",
       },
