@@ -67,11 +67,11 @@
 
         <!-- button -->
         <AnimateOnScroll :delay="700">
-          <InertiaLink href="/contact">
-            <div class="mt-12 flex justify-center">
+          <div class="mt-12 flex justify-center">
+            <InertiaLink href="/contact">
               <PrimaryButton>Write a Message</PrimaryButton>
-            </div>
-          </InertiaLink>
+            </InertiaLink>
+          </div>
         </AnimateOnScroll>
         <!-- button -->
       </div>
