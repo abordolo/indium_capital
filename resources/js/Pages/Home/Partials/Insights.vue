@@ -72,10 +72,16 @@
               <!-- single webinar -->
               <div class="flex flex-col gap-6 md:flex-row">
                 <!-- thumbnail -->
-                <div
-                  class="size-48 shrink-0 rounded-lg bg-gray-50 md:size-44 lg:size-32 xl:size-44 2xl:size-48"
-                >
-                  <img :src="item.icon" />
+                <div class="rounded-lg">
+                  <iframe
+                    class="aspect-video w-full rounded-xl sm:w-96 md:w-56 xl:w-72"
+                    :src="item.youtubeUrl"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
                 </div>
                 <!-- thumbnail -->
 
@@ -173,7 +179,7 @@ const insights = [
 // webinars
 const webinars = [
   {
-    thumbnail: "/images/home/insights/webinars/thumbnail1.png",
+    youtubeUrl: "https://www.youtube.com/embed/IIvdKXsAZnA?si=OAEurRrNNaAnfDTf",
     title: "IVF clinics - Impact of covid & way forward",
     topic: "Indium Healthcare Webinar",
     speakers: [
@@ -190,8 +196,8 @@ const webinars = [
   },
 
   {
-    thumbnail: "/images/home/insights/webinars/thumbnail2.png",
-    title: "IVF clinics - Impact of covid & way forward",
+    youtubeUrl: "https://www.youtube.com/embed/tqbf3Nyt3Sc?si=vIW-4De9agWGd7dn",
+    title: "Impact of covid on hospital economics & way forward",
     topic: "Indium Healthcare Webinar",
     speakers: [
       {
@@ -206,7 +212,7 @@ const webinars = [
   },
 
   {
-    thumbnail: "/images/home/insights/webinars/thumbnail3.png",
+    youtubeUrl: "https://www.youtube.com/embed/Drh77W4kJ58?si=CmIcr3ECI9E9zu-W",
     title: "Fintech in a post covid world",
     topic: "Indium Tech Webinar",
     speakers: [
