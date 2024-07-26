@@ -16,7 +16,7 @@
         <div class="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-12">
           <!-- insights wrapper -->
           <div
-            class="col-span-1 h-full rounded-2xl bg-gray-50 p-6 lg:col-span-5 lg:p-10"
+            class="col-span-1 h-full rounded-2xl bg-gray-50 p-6 lg:col-span-4 lg:p-8 xl:col-span-5"
           >
             <!-- insights -->
             <div class="flex h-full flex-col justify-between gap-6">
@@ -64,15 +64,17 @@
           <!-- insights wrapper -->
 
           <!-- webinars -->
-          <div class="grid grid-cols-1 gap-12 lg:col-span-7">
+          <div class="grid grid-cols-1 gap-12 lg:col-span-8 xl:col-span-7">
             <template
               v-for="(item, index) in webinars"
               :key="`webinars-${index}`"
             >
               <!-- single webinar -->
-              <div class="flex flex-col gap-6">
+              <div class="flex flex-col gap-6 md:flex-row">
                 <!-- thumbnail -->
-                <div class="size-32 shrink-0 rounded bg-gray-100">
+                <div
+                  class="size-48 shrink-0 rounded-lg bg-gray-50 md:size-44 lg:size-32 xl:size-44 2xl:size-48"
+                >
                   <img :src="item.icon" />
                 </div>
                 <!-- thumbnail -->
@@ -80,15 +82,15 @@
                 <!-- texts -->
                 <div>
                   <!-- title -->
-                  <Heading headingSize="h6" class="text-primary-500">{{
-                    item.title
-                  }}</Heading>
+                  <Heading headingSize="h6" class="text-primary-500">
+                    {{ item.title }}
+                  </Heading>
                   <!-- title -->
 
                   <!-- topic -->
-                  <BodyText class="mt-1 font-medium text-gray-500">{{
-                    item.topic
-                  }}</BodyText>
+                  <BodyText class="mt-1 font-medium text-gray-500">
+                    {{ item.topic }}
+                  </BodyText>
                   <!-- topic -->
 
                   <!-- speakers -->
@@ -101,7 +103,7 @@
                         <p class="font-semibold text-primary-700">
                           {{ speaker.name }}
                         </p>
-                        <p class="text-sm text-gray-500">
+                        <p class="text-sm font-medium text-gray-500">
                           {{ speaker.designation }}
                         </p>
                       </div>
