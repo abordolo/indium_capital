@@ -21,7 +21,7 @@
       @blur="showSubMenu = false"
     >
       <div
-        class="cursor-pointer text-sm font-semibold text-white hover:text-primary-900"
+        class="cursor-pointer text-sm font-semibold text-white hover:text-primary-600"
       >
         {{ navigationItem.name }}
       </div>

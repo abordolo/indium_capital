@@ -1,7 +1,10 @@
 <template>
   <div>
     <!-- label -->
-    <label :for="id" class="block text-sm font-medium leading-6 text-gray-900">
+    <label
+      :for="id"
+      class="block text-sm font-semibold leading-6 text-gray-400"
+    >
       {{ label }}
     </label>
     <!-- label -->
@@ -19,7 +22,7 @@
           :name="name"
           :id="id"
           :autocomplete="autocomplete"
-          class="block w-full border-0 bg-transparent px-4 py-2 text-gray-900 placeholder:text-sm placeholder:text-gray-400 focus:ring-0 disabled:cursor-not-allowed disabled:bg-gray-100 disabled:text-gray-500"
+          class="block w-full border-0 bg-transparent px-4 py-2 font-medium placeholder:text-sm placeholder:text-gray-400 focus:ring-0 disabled:cursor-not-allowed disabled:bg-gray-100 disabled:text-gray-500"
           :placeholder="placeholder"
           :disabled="disabled"
         />
@@ -33,7 +36,7 @@
           :name="name"
           :id="id"
           :autocomplete="autocomplete"
-          class="block w-full border-0 bg-transparent px-4 py-2 text-gray-900 placeholder:text-sm placeholder:text-gray-400 focus:ring-0 disabled:cursor-not-allowed disabled:bg-gray-100 disabled:text-gray-500"
+          class="block w-full border-0 bg-transparent px-4 py-2 font-medium placeholder:text-sm placeholder:text-gray-400 focus:ring-0 disabled:cursor-not-allowed disabled:bg-gray-100 disabled:text-gray-500"
           :placeholder="placeholder"
           :disabled="disabled"
         />

@@ -29,7 +29,7 @@
               }"
             >
               <!-- icon -->
-              <div class="size-8">
+              <div class="size-7">
                 <AnimateOnScroll
                   animateFrom="scale-0 opacity-0"
                   :delay="100 * index + 200"
@@ -41,9 +41,12 @@
 
               <!-- title -->
               <AnimateOnScroll :delay="50 * index + 200">
-                <Heading headingSize="h6" class="mt-6">
+                <p
+                  headingSize="h6"
+                  class="mt-5 text-sm font-semibold text-gray-400"
+                >
                   {{ item.title }}
-                </Heading>
+                </p>
               </AnimateOnScroll>
               <!-- title -->
 

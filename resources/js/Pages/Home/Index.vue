@@ -16,7 +16,7 @@
     <WhyIndium />
     <OurValues />
     <Testimonials />
-    <!-- <Insights /> -->
+    <Insights />
     <ContactUsSection />
     <!-- contents -->
   </div>
@@ -25,7 +25,8 @@
 
 <script setup>
 // imports
-import Hero from "./Partials/Hero3.vue";
+import Hero from "./Partials/HeroBlue.vue";
+// import Hero from "./Partials/HeroWhite.vue";
 import Specialization from "./Partials/Specialization.vue";
 import Services from "./Partials/Services.vue";
 import Transactions from "./Partials/Transactions2.vue";
@@ -33,7 +34,7 @@ import Team from "./Partials/Team.vue";
 import WhyIndium from "./Partials/WhyIndium.vue";
 import OurValues from "./Partials/OurValues.vue";
 import Testimonials from "./Partials/Testimonials.vue";
-import Insights from "./Partials/Insights.vue";
+import Insights from "./Partials/InsightsAlt.vue";
 import ContactUsSection from "./Partials/ContactUsSection.vue";
 
 // props

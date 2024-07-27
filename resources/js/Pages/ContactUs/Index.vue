@@ -19,13 +19,13 @@
           <!-- contact us form -->
           <div class="col-span-12 lg:col-span-8">
             <!-- heading -->
-            <Heading headingSize="h3">Write to Us</Heading>
+            <Heading headingSize="h5">Write to Us</Heading>
             <!-- heading -->
 
             <!-- form -->
             <!-- <div class="mt-6 rounded-2xl border p-6"> -->
             <div
-              class="mt-6 rounded-2xl border p-6 shadow-2xl shadow-black/5 sm:p-8"
+              class="mt-5 rounded-2xl border p-6 shadow-2xl shadow-black/5 sm:p-8"
             >
               <!-- <div class="mt-6"> -->
               <ContactUsForm />
@@ -36,11 +36,11 @@
 
           <!-- blocks -->
           <div class="col-span-12 lg:col-span-4">
-            <Heading headingSize="h3">Reach Us</Heading>
+            <Heading headingSize="h5">Reach Us</Heading>
 
             <!-- contact blocks -->
             <div
-              class="mt-6 grid grid-cols-1 gap-8 rounded-2xl border p-6 shadow-2xl shadow-black/5 sm:grid-cols-2 sm:gap-12 lg:grid-cols-1"
+              class="mt-5 grid grid-cols-1 gap-8 rounded-2xl border p-6 shadow-2xl shadow-black/5 sm:grid-cols-2 sm:gap-12 lg:grid-cols-1"
             >
               <template v-for="item in contactBlocks" :key="item.title">
                 <!-- single contact block -->
@@ -57,9 +57,9 @@
                   <!-- icon -->
 
                   <!-- title -->
-                  <Heading headingSize="h6" class="mt-4">
+                  <p class="mt-4 text-sm font-semibold text-gray-400">
                     {{ item.title }}
-                  </Heading>
+                  </p>
                   <!-- title -->
 
                   <!-- values -->
@@ -90,11 +90,11 @@
     <Section class="pb-[40px] lg:pb-[60px]">
       <Container>
         <div>
-          <Heading headingSize="h3">Navigate to Us</Heading>
+          <Heading headingSize="h5">Navigate to Us</Heading>
 
           <!-- map container -->
           <div
-            class="mt-6 overflow-clip rounded-2xl border shadow-2xl shadow-black/10"
+            class="mt-5 overflow-clip rounded-2xl border shadow-2xl shadow-black/10"
           >
             <iframe
               :src="mapViewLink"
@@ -108,7 +108,7 @@
           <!-- map container -->
 
           <!-- view on map button -->
-          <div class="mt-8 flex space-x-4">
+          <div class="mt-10 flex space-x-4">
             <a :href="mapNavigationLink" target="_blank" class="block">
               <PrimaryButton class="min-w-[180px]"> Navigation </PrimaryButton>
             </a>
@@ -133,7 +133,7 @@
 import ContactUsForm from "./Partials/ContactUsForm.vue";
 
 // variables
-const headingImage = "images/contact-us/header.png";
+const headingImage = "images/contact-us/header1.png";
 const heading = "Contact Us";
 const intro = "It is always nice to hear from you.";
 const contactBlocks = [

@@ -1,12 +1,12 @@
 <template>
   <Section
-    class="xs-[80px] md:[120px] relative overflow-clip bg-primary-500 py-[60px] sm:py-[100px]"
+    class="xs-[80px] md:[120px] relative z-10 overflow-clip bg-primary-500 py-[60px] sm:py-[100px]"
   >
     <!-- background -->
     <div class="absolute inset-0 z-10 hidden animate-hero_bg md:block">
       <img
-        src="images/home/hero/bg-pattern-big.svg"
-        class="h-full w-full object-cover object-left opacity-10"
+        src="images/home/hero/bg-pattern-thin.svg"
+        class="h-full w-full object-cover object-left opacity-20"
       />
     </div>
 

@@ -11,7 +11,7 @@
           <div
             class="mb-2 flex h-full items-center justify-center border-r sm:col-span-3 sm:pb-10 xl:col-span-1 xl:pb-0"
           >
-            <Heading headingSize="h3" class="text-center">
+            <Heading headingSize="h4" class="text-center">
               We specialize in
             </Heading>
           </div>
@@ -44,9 +44,9 @@
 
               <!-- text -->
               <div class="mt-3">
-                <p class="text-lg font-semibold sm:text-base md:text-lg">
+                <BodyText class="font-medium">
                   {{ item.name }}
-                </p>
+                </BodyText>
               </div>
               <!-- text -->
             </div>

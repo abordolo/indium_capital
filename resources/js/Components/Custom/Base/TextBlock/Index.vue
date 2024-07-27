@@ -15,10 +15,7 @@
           <div class="space-y-4">
             <!-- preHeading -->
             <AnimateOnScroll>
-              <PreHeading
-                v-if="preHeading"
-                :textWhite="textWhite"
-              >
+              <PreHeading v-if="preHeading" :textWhite="textWhite">
                 {{ preHeading }}
               </PreHeading>
             </AnimateOnScroll>
@@ -26,10 +23,7 @@
 
             <!-- heading -->
             <AnimateOnScroll :delay="100">
-              <Heading
-                v-if="heading"
-                :headingSize="headingSize"
-              >
+              <Heading v-if="heading" :headingSize="headingSize">
                 {{ heading }}
               </Heading>
             </AnimateOnScroll>
@@ -62,7 +56,7 @@
 
 <script setup>
 // imports
-import { computed } from 'vue';
+import { computed } from "vue";
 
 // props
 const props = defineProps({
@@ -72,15 +66,15 @@ const props = defineProps({
   body: String,
   alignment: {
     type: String,
-    default: 'left',
-    validator: (value) => ['left', 'center'].includes(value),
+    default: "left",
+    validator: (value) => ["left", "center"].includes(value),
   },
 
   // size
   headingSize: {
     type: String,
-    default: 'h1',
-    validator: (value) => ['h1', 'h2', 'display'].includes(value),
+    default: "h1",
+    validator: (value) => ["h1", "h2", "display"].includes(value),
   },
 
   // textWhite

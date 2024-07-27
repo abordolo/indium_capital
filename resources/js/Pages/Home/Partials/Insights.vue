@@ -2,24 +2,21 @@
   <Section class="py-[80px]" id="insights">
     <Container>
       <div>
-        <!-- heading section -->
-        <div class="max-w-[720px]">
-          <TextBlock
-            :preHeading="preHeading"
-            :heading="heading"
-            :intro="intro"
-          />
-        </div>
-        <!-- heading section -->
-
         <!-- insights and webinars -->
-        <div class="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-12">
+        <div class="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-12 xl:gap-12">
           <!-- insights wrapper -->
-          <div
-            class="col-span-1 h-full rounded-2xl bg-gray-50 p-6 lg:col-span-4 lg:p-8 xl:col-span-5"
-          >
+          <div class="= col-span-1 rounded-2xl lg:col-span-4 xl:col-span-6">
+            <!-- heading section -->
+            <div class="max-w-[720px]">
+              <TextBlock
+                :preHeading="preHeading"
+                :heading="heading"
+                :intro="intro"
+              />
+            </div>
+            <!-- heading section -->
             <!-- insights -->
-            <div class="flex h-full flex-col justify-between gap-6">
+            <div class="mt-12 flex flex-col gap-6">
               <template
                 v-for="(item, index) in insights"
                 :key="`insights-${index}`"
@@ -64,17 +61,17 @@
           <!-- insights wrapper -->
 
           <!-- webinars -->
-          <div class="grid grid-cols-1 gap-12 lg:col-span-8 xl:col-span-7">
+          <div class="grid grid-cols-1 gap-8 lg:col-span-8 xl:col-span-6">
             <template
               v-for="(item, index) in webinars"
               :key="`webinars-${index}`"
             >
               <!-- single webinar -->
-              <div class="flex flex-col gap-6 md:flex-row">
+              <div class="flex flex-col gap-6 border p-8">
                 <!-- thumbnail -->
                 <div class="rounded-lg">
                   <iframe
-                    class="aspect-video w-full rounded-xl sm:w-96 md:w-56 xl:w-72"
+                    class="aspect-video w-full rounded-xl sm:w-96 md:w-56"
                     :src="item.youtubeUrl"
                     title="YouTube video player"
                     frameborder="0"
@@ -87,45 +84,41 @@
 
                 <!-- texts -->
                 <div>
+                  <!-- topic -->
+                  <div class="flex">
+                    <p
+                      class="flex rounded-full border bg-primary-500 px-3 py-1 text-xs font-medium text-white"
+                    >
+                      {{ item.topic }}
+                    </p>
+                  </div>
+                  <!-- topic -->
+
                   <!-- title -->
-                  <Heading headingSize="h6" class="text-primary-500">
+                  <Heading headingSize="h6" class="mt-3">
                     {{ item.title }}
                   </Heading>
                   <!-- title -->
 
-                  <!-- topic -->
-                  <BodyText class="mt-1 font-medium text-gray-500">
-                    {{ item.topic }}
-                  </BodyText>
-                  <!-- topic -->
-
                   <!-- speakers -->
-                  <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <div class="mt-6 grid grid-cols-1 gap-2 sm:grid-cols-2">
                     <template
                       v-for="(speaker, index) in item.speakers"
                       :key="`speaker-${index}`"
                     >
-                      <div class="border-l pl-3">
+                      <!-- single speaker -->
+                      <div class="rounded-lg bg-primary-50 px-3 py-2">
                         <p class="font-semibold text-primary-700">
                           {{ speaker.name }}
                         </p>
-                        <p class="text-sm font-medium text-gray-500">
+                        <p class="text-xs font-medium text-gray-500">
                           {{ speaker.designation }}
                         </p>
                       </div>
+                      <!-- single speaker -->
                     </template>
                   </div>
                   <!-- speakers -->
-
-                  <!-- link -->
-                  <!-- <div class="mt-6">
-                  <InertiaLink :href="item.url">
-                    <p class="tex-sm font-medium text-primary-500">
-                      View Details
-                    </p>
-                  </InertiaLink>
-                </div> -->
-                  <!-- link -->
                 </div>
                 <!-- texts -->
               </div>

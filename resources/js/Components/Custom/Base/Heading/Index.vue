@@ -49,32 +49,32 @@ const classes = computed(() => {
 
   // h1
   if (props.headingSize === "h1") {
-    baseClasses.push("text-[36px]", "md:text-[40px]", "2xl:text-[48px]");
+    baseClasses.push("text-[32px]", "md:text-[36px]", "2xl:text-[40px]");
   }
 
   // h2
   if (props.headingSize === "h2") {
-    baseClasses.push("text-[32px]", "md:text-[36px]", "2xl:text-[40px]");
+    baseClasses.push("text-[28px]", "md:text-[32px]", "2xl:text-[36px]");
   }
 
   // h3
   if (props.headingSize === "h3") {
-    baseClasses.push("text-[28px]", "md:text-[32px]", "2xl:text-[36px]");
+    baseClasses.push("text-[24px]", "md:text-[28px]", "2xl:text-[32px]");
   }
 
   // h4
   if (props.headingSize === "h4") {
-    baseClasses.push("text-[24px]", "md:text-[28px]", "2xl:text-[32px]");
+    baseClasses.push("text-[20px]", "md:text-[24px]", "2xl:text-[28px]");
   }
 
   // h5
   if (props.headingSize === "h5") {
-    baseClasses.push("text-[20px]", "md:text-[24px]", "2xl:text-[28px]");
+    baseClasses.push("text-[20px]", "md:text-[22px]", "2xl:text-[24px]");
   }
 
   // h6
   if (props.headingSize === "h6") {
-    baseClasses.push("text-[20px]", "2xl:text-[22px]");
+    baseClasses.push("text-[18px]", "2xl:text-[22px]");
   }
 
   return baseClasses;

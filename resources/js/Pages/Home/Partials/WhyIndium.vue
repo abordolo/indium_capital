@@ -1,6 +1,6 @@
 <template>
   <Section
-    class="relative overflow-clip bg-green-50/50 py-[60px] xs:py-[80px]"
+    class="relative overflow-clip py-[60px] xs:py-[80px]"
     id="why-indium"
   >
     <Container>
@@ -75,7 +75,7 @@
             class="relative h-[300px] w-full shrink-0 overflow-clip rounded-2xl shadow-xl lg:h-auto lg:w-[300px] xl:min-w-[320px] 2xl:min-w-[360px]"
           >
             <div class="absolute inset-0">
-              <AnimateOnScroll :delay="600">
+              <AnimateOnScroll :delay="200">
                 <img
                   src="images/home/why-indium/image.png"
                   class="h-full w-full object-cover object-center"
