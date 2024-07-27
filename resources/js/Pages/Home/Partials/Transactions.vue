@@ -66,7 +66,7 @@
                 >
                   <!-- primary logo -->
                   <div
-                    class="w- relative flex h-[100px] items-center justify-center rounded-xl bg-white shadow-md"
+                    class="relative flex h-[100px] items-center justify-center rounded-xl bg-white shadow-md"
                   >
                     <div>
                       <AnimateOnScroll :delay="200">

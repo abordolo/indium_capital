@@ -36,20 +36,23 @@
           <Swiper
             :modules="modules"
             :slides-per-view="1"
-            :space-between="32"
+            :space-between="24"
             :pagination="{ clickable: true }"
             autoplay
             :breakpoints="{
               0: {
                 slidesPerView: 1,
               },
-              840: {
+              640: {
                 slidesPerView: 2,
               },
-              1120: {
+              840: {
                 slidesPerView: 3,
               },
-              1600: {
+              1280: {
+                slidesPerView: 4,
+              },
+              1280: {
                 slidesPerView: 4,
               },
             }"
@@ -62,11 +65,11 @@
               <!-- single card -->
               <SwiperSlide>
                 <div
-                  class="select:none relative mx-auto h-[440px] max-w-[420px] cursor-pointer rounded-xl border bg-white p-6 pb-[220px] text-center shadow transition-all duration-500 hover:shadow-xl"
+                  class="select:none relative mx-auto h-[420px] max-w-[320px] cursor-pointer rounded-xl border bg-white px-4 pb-[220px] pt-2 text-center shadow transition-all duration-500 hover:shadow-xl md:px-6"
                 >
                   <!-- primary logo -->
                   <div
-                    class="w- relative flex h-[100px] items-center justify-center rounded-xl border bg-white"
+                    class="relative flex h-[100px] items-center justify-center rounded-xl bg-white"
                   >
                     <div>
                       <AnimateOnScroll :delay="200">
@@ -93,14 +96,12 @@
 
                   <!-- text -->
                   <AnimateOnScroll :delay="400">
-                    <BodyText class="mt-3 font-medium">{{
-                      item.text
-                    }}</BodyText>
+                    <p class="mt-4 font-medium">{{ item.text }}</p>
                   </AnimateOnScroll>
                   <!-- text -->
 
                   <!-- second row of logos -->
-                  <div
+                  <!-- <div
                     class="absolute bottom-[90px] left-6 right-6 mt-6 flex h-[90px] items-center justify-center space-x-8 rounded-xl px-4"
                     :class="{
                       'border bg-white':
@@ -108,6 +109,9 @@
                         item.intermediateText ||
                         item.secondaryLogo2,
                     }"
+                  > -->
+                  <div
+                    class="absolute bottom-[90px] left-4 right-4 mt-6 flex h-[90px] items-center justify-center space-x-8 rounded-xl"
                   >
                     <!-- secondary logo 1 -->
                     <div v-if="item.secondaryLogo1">
@@ -148,9 +152,9 @@
                       animateFrom="scale-0 opacity-0"
                     >
                       <div
-                        class="rounded border border-primary-600 bg-primary-500 px-2 py-1"
+                        class="rounded-full border border-primary-600 bg-primary-500 px-2 py-1"
                       >
-                        <p class="text-sm font-medium text-white">
+                        <p class="text-xs font-medium text-white">
                           {{ item.timeFrame }}
                         </p>
                       </div>
