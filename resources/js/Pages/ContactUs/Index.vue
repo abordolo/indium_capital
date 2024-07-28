@@ -23,7 +23,7 @@
             <!-- heading -->
 
             <!-- form -->
-            <!-- <div class="mt-6 rounded-2xl border p-6"> -->
+            <!-- <div class="p-6 mt-6 border rounded-2xl"> -->
             <div
               class="mt-5 rounded-2xl border p-6 shadow-2xl shadow-black/5 sm:p-8"
             >
@@ -94,11 +94,11 @@
 
           <!-- map container -->
           <div
-            class="mt-5 overflow-clip rounded-2xl border shadow-2xl shadow-black/10"
+            class="ring-5 mt-5 overflow-clip rounded-2xl border shadow-2xl shadow-black/10 focus:outline-none focus:ring-0"
           >
             <iframe
               :src="mapViewLink"
-              class="h-[600px] w-full"
+              class="h-[600px] w-full rounded-2xl focus:outline-none focus:ring-0"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -108,15 +108,13 @@
           <!-- map container -->
 
           <!-- view on map button -->
-          <div class="mt-10 flex space-x-4">
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row">
             <a :href="mapNavigationLink" target="_blank" class="block">
-              <PrimaryButton class="min-w-[180px]"> Navigation </PrimaryButton>
+              <PrimaryButton class="w-[180px]"> Navigation </PrimaryButton>
             </a>
 
             <a :href="mapLink" target="_blank" class="block">
-              <SecondaryButton class="min-w-[160px]">
-                View on Map
-              </SecondaryButton>
+              <SecondaryButton class="w-[180px]"> View on Map </SecondaryButton>
             </a>
           </div>
           <!-- view on map button -->
