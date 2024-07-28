@@ -21,50 +21,60 @@
             <template v-for="(item, index) in services" :key="index">
               <!-- single service -->
               <div
-                class="ml:flex-row ml:items-start flex flex-col-reverse gap-8 xl:items-center xl:gap-10"
+                class="ml:flex-row ml:items-start flex flex-col-reverse gap-8 xl:items-center xl:gap-16"
                 :class="{
                   'ml:flex-row-reverse': index % 2 === 0,
                 }"
               >
                 <!-- texts -->
                 <div class="ml:w-3/5 xl:7/12">
-                  <Heading headingSize="h1">{{ item.heading }}</Heading>
+                  <AnimateOnScroll :delay="400">
+                    <Heading headingSize="h1">{{ item.heading }}</Heading>
+                  </AnimateOnScroll>
                   <!-- paragraphs -->
-                  <div class="mt-4 space-y-3 lg:mt-6">
-                    <template
-                      v-for="(paragraph, index) in item.paragraphs"
-                      :key="`paragraph-${item.heading}-${index}`"
-                    >
-                      <!-- single paragraph -->
-                      <div>
-                        <BodyText>{{ paragraph }}</BodyText>
-                      </div>
-                      <!-- single paragraph -->
-                    </template>
-                  </div>
+                  <AnimateOnScroll :delay="500">
+                    <div class="mt-4 space-y-3 lg:mt-6">
+                      <template
+                        v-for="(paragraph, index) in item.paragraphs"
+                        :key="`paragraph-${item.heading}-${index}`"
+                      >
+                        <!-- single paragraph -->
+                        <div>
+                          <BodyText>{{ paragraph }}</BodyText>
+                        </div>
+                        <!-- single paragraph -->
+                      </template>
+                    </div>
+                  </AnimateOnScroll>
                   <!-- paragraphs -->
 
                   <!-- buttons -->
                   <div class="mt-10 flex flex-col gap-4 sm:flex-row">
                     <InertiaLink :href="route('contact')">
-                      <PrimaryButton class="w-[180px]"
-                        >Contact Us</PrimaryButton
-                      >
+                      <AnimateOnScroll :delay="600">
+                        <PrimaryButton class="w-[180px]">
+                          Contact Us
+                        </PrimaryButton>
+                      </AnimateOnScroll>
                     </InertiaLink>
-                    <SecondaryButton class="w-[180px]"
-                      >View Insights</SecondaryButton
-                    >
+
+                    <AnimateOnScroll :delay="700">
+                      <SecondaryButton class="w-[180px]">
+                        View Insights
+                      </SecondaryButton>
+                    </AnimateOnScroll>
                   </div>
                   <!-- buttons -->
                 </div>
                 <!-- texts -->
 
                 <!-- image -->
-                <div
-                  class="ml:w-2/5 overflow-clip rounded-xl shadow-xl shadow-black/10 xl:w-5/12"
-                >
+                <div class="ml:w-2/5 xl:w-5/12">
                   <div>
-                    <img :src="item.image" class="sm:w-[360px] xl:w-full" />
+                    <img
+                      :src="item.image"
+                      class="rounded-xl shadow-xl shadow-black/10 sm:w-[360px] xl:w-full"
+                    />
                   </div>
                 </div>
                 <!-- image -->
