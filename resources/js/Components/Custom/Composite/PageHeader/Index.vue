@@ -1,10 +1,10 @@
 <template>
   <!-- contents wrapper -->
-  <Section class="relative h-[400px] shadow-2xl shadow-black/5">
+  <Section class="relative h-[300px] bg-gray-50 lg:h-[360px]">
     <!-- background -->
-    <div class="absolute inset-0 -z-10 bg-green-100">
-      <img :src="image" class="h-full w-full object-cover object-center" />
-    </div>
+    <!-- <div class="absolute inset-0 -z-10">
+      <img :src="image" class="object-cover object-center w-full h-full" />
+    </div> -->
     <!-- background -->
 
     <Container class="h-full">
@@ -12,17 +12,21 @@
         <div class="mx-auto max-w-[720px] pb-2">
           <!-- heading -->
           <div>
-            <h1
-              class="text-center text-[60px] font-black leading-[72px] text-primary-500"
-            >
-              {{ heading }}
-            </h1>
+            <AnimateOnScroll>
+              <h1
+                class="text-center text-[40px] font-black leading-[72px] text-primary-500 sm:text-[48px]"
+              >
+                {{ heading }}
+              </h1>
+            </AnimateOnScroll>
           </div>
           <!-- heading -->
 
           <!-- intro -->
           <div>
-            <Intro class="mt-2 text-center">{{ intro }}</Intro>
+            <AnimateOnScroll :delay="300">
+              <Intro class="mt-2 text-center">{{ intro }}</Intro>
+            </AnimateOnScroll>
           </div>
           <!-- intro -->
         </div>

@@ -68,6 +68,7 @@ export default {
 
       screens: {
         xs: "480px",
+        ml: "900px",
       },
 
       colors: {

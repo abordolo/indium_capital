@@ -112,6 +112,12 @@ const allNavigationItemsAlt = ref([
   },
 
   {
+    id: 1,
+    name: "Services",
+    url: route("services"),
+  },
+
+  {
     id: 5,
     name: "Contact",
     url: route("contact"),
