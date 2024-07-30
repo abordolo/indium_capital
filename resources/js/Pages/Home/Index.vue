@@ -25,8 +25,8 @@
 
 <script setup>
 // imports
-import Hero from "./Partials/HeroBlue.vue";
 // import Hero from "./Partials/HeroWhite.vue";
+import Hero from "./Partials/HeroBlue.vue";
 import Specialization from "./Partials/Specialization.vue";
 import Services from "./Partials/Services.vue";
 import Transactions from "./Partials/Transactions2.vue";
