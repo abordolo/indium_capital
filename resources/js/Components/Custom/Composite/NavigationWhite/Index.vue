@@ -1,5 +1,5 @@
 <template>
-  <Section class="border-b border-primary-600 bg-white py-4">
+  <Section class="border-b border-gray-100 bg-white py-4">
     <Container>
       <!-- navigation bar -->
       <div class="flex items-center justify-between">
